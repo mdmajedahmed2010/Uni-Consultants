@@ -7,12 +7,12 @@ const posters = [
   {
     key: "logo",
     src: "/logo.jpg",
-    label: "EDU Global — Official Brand Emblem & Logo (Royal Blue Badge with Mortarboard Cap & Stylized Pencil)",
+    label: `${company.name} — Official Brand Emblem & Logo (Vibrant Orange & Navy)`,
   },
   {
     key: "banner",
     src: "/banner.png",
-    label: "EDU Global — Official Comprehensive Banner ('One stop Solution to Your Journey of Higher Education', 10 Flags & 'INBOX US TO KNOW MORE')",
+    label: `${company.name} — Official Comprehensive Banner ("ONE STOP SOLUTION FOR STUDY ABROAD EDUCATION")`,
   },
 ];
 
@@ -26,7 +26,7 @@ export function PosterWall() {
         <SectionHeading
           eyebrow="Official Brand Assets"
           title="Official Visuals & Brand Memorabilia"
-          subtitle="Explore verified assets and official credentials from EDU Global (Dhanmondi, Dhaka) — click any asset to enlarge."
+          subtitle={`Explore verified assets and official credentials from ${company.name} (${company.taglineBangla}) — click any asset to enlarge.`}
         />
       </Reveal>
 
@@ -36,7 +36,7 @@ export function PosterWall() {
             <button
               type="button"
               onClick={() => setActive(p.key)}
-              className="card-clean group block w-64 sm:w-80 overflow-hidden rounded-3xl text-left transition-all hover:scale-[1.02] cursor-pointer border border-slate-200 hover:border-blue-400"
+              className="card-clean group block w-64 sm:w-80 overflow-hidden rounded-3xl text-left transition-all hover:scale-[1.02] cursor-pointer border border-slate-200 hover:border-uni-orange"
             >
               <div className="relative aspect-video w-full overflow-hidden bg-slate-950">
                 <img
@@ -50,7 +50,7 @@ export function PosterWall() {
                 <span className="block text-xs font-bold text-slate-900 leading-snug line-clamp-2">
                   {p.label}
                 </span>
-                <span className="mt-2 inline-flex items-center gap-1 text-[0.68rem] font-bold text-blue-700">
+                <span className="mt-2 inline-flex items-center gap-1 text-[0.68rem] font-bold text-uni-orange">
                   <span>✨</span> Verified Brand Asset
                 </span>
               </div>

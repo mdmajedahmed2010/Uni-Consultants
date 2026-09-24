@@ -4,56 +4,56 @@ import { company } from "@/lib/site-data";
 export function WhyChooseSection() {
   const features = [
     {
-      icon: "🎓",
-      iconBg: "bg-blue-50 text-blue-700",
+      icon: "🛡️",
+      iconBg: "bg-orange-50 text-orange-700",
       value: 100,
       suffix: "%",
       label: "",
-      metricColor: "text-[#0047ba]",
-      tag: "ADMISSION GUIDANCE",
-      title: "100% University Admission Guidance",
-      bengaliTitle: "১০০% ভর্তি নিশ্চয়তা ও ডিরেক্ট পার্টনারশিপ",
-      desc: "Direct official university representation with Canterbury Christ Church University (UK) and premier European, American & Asian institutions.",
-      bengaliDesc: "যুক্তরাজ্যের Canterbury Christ Church University সহ ইউরোপ ও বিশ্বের শীর্ষ বিশ্ববিদ্যালয়ে শতভাগ ভর্তি নিশ্চয়তা ও সরাসরি প্রসেসিং।",
+      metricColor: "text-[#f37021]",
+      tag: "CORE PHILOSOPHY",
+      title: "Honesty is Our Commitment",
+      bengaliTitle: "সততাই আমাদের অঙ্গীকার",
+      desc: "Transparent advisory with zero hidden charges. We evaluate student background honestly to provide realistic admission and visa pathways.",
+      bengaliDesc: "কোনো প্রকার মিথ্যা আশ্বাস বা গোপন ফি ছাড়া শতভাগ সৎ ও বিশ্বস্ত উচ্চশিক্ষা কাউন্সেলিং।",
     },
     {
-      icon: "🏛️",
-      iconBg: "bg-emerald-50 text-emerald-700",
-      value: 20,
-      suffix: " Students",
-      label: "",
-      metricColor: "text-emerald-600",
-      tag: "SPECIAL PROMOTION",
-      title: "Free Bank Support Offer",
-      bengaliTitle: "ফ্রি ব্যাংক সাপোর্ট সুবিধা",
-      desc: "Exclusive bank solvency assistance for early applicants (first 20 students) applying for Cyprus and European Union upcoming intakes.",
-      bengaliDesc: "সাইপ্রাস ও ইউরোপীয় ইউনিয়নের আসন্ন ইনটেকে আবেদনের ক্ষেত্রে প্রথম ২০ জন শিক্ষার্থীর জন্য বিশেষ ফ্রি ব্যাংক সাপোর্ট সুবিধা।",
-    },
-    {
-      icon: "⚡",
+      icon: "📅",
       iconBg: "bg-amber-50 text-amber-700",
-      value: 10,
-      suffix: "+ Yrs",
+      value: 3,
+      suffix: "+ Intakes",
       label: "",
       metricColor: "text-amber-600",
-      tag: "INCLUSIVE PATHWAYS",
-      title: "Study Gap & Low CGPA Accepted",
-      bengaliTitle: "স্টাডি গ্যাপ ও কম CGPA গ্রহণযোগ্য",
-      desc: "Comprehensive profile packaging for students with up to 10+ years study gap and graduation GPA down to 2.5 in accredited institutions.",
-      bengaliDesc: "এইচএসসি বা ডিগ্রির পর দীর্ঘ শিক্ষাবিরতি এবং CGPA ২.৫+ থাকলেও সঠিক প্রফেশনাল ফাইল তৈরি করে ভিসা লাভের সুযোগ।",
+      tag: "FLEXIBLE ADMISSION",
+      title: "Admission Open For Any Intake!!",
+      bengaliTitle: "যে কোনো ইনটেকে ভর্তির সুযোগ!!",
+      desc: "Apply for upcoming Spring, Summer, and Fall intakes across Cyprus, UK, Malaysia, Malta, and Europe with prompt offer letter issuance.",
+      bengaliDesc: "বছরের যে কোনো ইনটেকে স্বল্প সময়ের মধ্যে অফার লেটার ও দ্রুত প্রসেসিং সুবিধা।",
     },
     {
-      icon: "🗣️",
-      iconBg: "bg-indigo-50 text-indigo-700",
-      value: 4,
-      suffix: " Academies",
+      icon: "🌐",
+      iconBg: "bg-blue-50 text-blue-700",
+      value: 2,
+      suffix: " Options",
       label: "",
-      metricColor: "text-indigo-600",
-      tag: "LANGUAGE ACADEMY",
-      title: "Comprehensive Language Academy",
-      bengaliTitle: "পূর্ণাঙ্গ ল্যাঙ্গুয়েজ একাডেমি",
-      desc: "Cambridge authentic IELTS (Band 7.5+), Spoken English Fluency, Kids English & Phonics, and Japanese JLPT instruction at Dhanmondi HQ.",
-      bengaliDesc: "আন্তর্জাতিক মানের ট্রেইনারদের পরিচালনায় IELTS, স্পোকেন ইংলিশ, কিডস ইংলিশ এবং জাপানিজ ভাষা কোর্স।",
+      metricColor: "text-blue-600",
+      tag: "INCLUSIVE ENTRY",
+      title: "With / Without IELTS Options",
+      bengaliTitle: "IELTS সহ বা IELTS ছাড়া আবেদনের সুযোগ",
+      desc: "Direct admissions via Medium of Instruction (MOI), internal university language evaluations, and specialized IELTS coaching.",
+      bengaliDesc: "আইইএলটিএস স্কোর ছাড়াই বিগত ডিগ্রির MOI দিয়ে বা আমাদের একাডেমিতে প্রস্তুতি নিয়ে ভর্তির পথ।",
+    },
+    {
+      icon: "✈️",
+      iconBg: "bg-emerald-50 text-emerald-700",
+      value: 30,
+      suffix: "+ Visas",
+      label: "",
+      metricColor: "text-emerald-600",
+      tag: "PROVEN TRACK RECORD",
+      title: "High Visa Success Rate",
+      bengaliTitle: "সর্বোচ্চ ভিসা সাকসেস রেট",
+      desc: "Over 30 verified student success stories in our official banner. Multi-tier file checking, financial scrutiny, and mock embassy interviews.",
+      bengaliDesc: "আমাদের অফিসিয়াল ব্যানারে বাস্তব শিক্ষার্থীদের ভিসা প্রাপ্তির আনন্দই আমাদের কাজের সবচেয়ে বড় প্রমাণ।",
     },
   ];
 
@@ -62,12 +62,12 @@ export function WhyChooseSection() {
       <div className="section-shell">
         {/* Title with Framer Motion */}
         <MotionHeading
-          tag="— WHY EDU GLOBAL (ইডিইউ গ্লোবাল) —"
+          tag="— WHY UNI CONSULTANTS (ইউআই কনসালট্যান্টস) —"
           title="Why Choose"
-          highlight="EDU Global?"
-          description="Direct official university partnerships, verified Free Bank Support for European intakes, and professional language training at Keari Plaza, Satmasjid Road, Dhanmondi, Dhaka."
-          tagColor="text-[#0047ba]"
-          highlightColor="text-[#0047ba]"
+          highlight="UNI Consultants?"
+          description="Honesty is our Commitment. Direct discussions with expert counselors, high visa success rate, and official banner representation for Cyprus, UK, Malaysia & Malta."
+          tagColor="text-[#f37021]"
+          highlightColor="text-[#f37021]"
         />
 
         {/* 4 Feature Cards Grid with Staggered Entrance & CountUp */}
@@ -77,7 +77,7 @@ export function WhyChooseSection() {
         >
           {features.map((f) => (
             <StaggerItem key={f.title}>
-              <div className="rounded-3xl border border-slate-200/80 bg-slate-50/50 p-6 sm:p-7 text-center flex flex-col items-center hover:bg-white hover:border-blue-400 hover:shadow-2xl transition-all duration-300 group hover:-translate-y-2 h-full">
+              <div className="rounded-3xl border border-slate-200/80 bg-slate-50/50 p-6 sm:p-7 text-center flex flex-col items-center hover:bg-white hover:border-[#f37021] hover:shadow-2xl transition-all duration-300 group hover:-translate-y-2 h-full">
                 {/* Icon Container */}
                 <div
                   className={`flex h-14 w-14 items-center justify-center rounded-2xl text-2xl mb-4 transition-transform duration-300 group-hover:scale-110 shadow-xs ${f.iconBg}`}
@@ -96,7 +96,7 @@ export function WhyChooseSection() {
                   {f.tag}
                 </span>
 
-                <h3 className="font-display text-sm sm:text-base font-extrabold text-[#0a1931] mb-1 leading-snug group-hover:text-[#0047ba] transition-colors">
+                <h3 className="font-display text-sm sm:text-base font-extrabold text-[#0f172a] mb-1 leading-snug group-hover:text-[#f37021] transition-colors">
                   {f.title}
                 </h3>
 

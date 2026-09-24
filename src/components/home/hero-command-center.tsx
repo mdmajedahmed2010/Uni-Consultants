@@ -21,123 +21,137 @@ interface SlideData {
 
 const heroSlides: SlideData[] = [
   {
-    country: "Global Higher Education (10+ Nations)",
+    country: "UNI Consultants — Study Abroad",
     code: "GLOBAL",
     flag: "🌍",
-    tagline: "Your Official Gateway to 10+ Leading Destinations",
+    tagline: "Honesty is Our Commitment · Free Expert Consultation",
     slogan:
-      "Comprehensive admission guidance, confirmed offer letters, and end-to-end visa support across the UK, USA, Canada, Australia, Europe & Asia.",
+      "Admission Open For Any Intake!! Options With or Without IELTS, scholarship guidance, and direct discussion with expert counselors.",
     bengaliSlogan:
-      "ইউরোপ, ইউকে, ইউএসএ, কানাডা, অস্ট্রেলিয়া ও জাপানে ১০০% অ্যাডমিশন গাইডলাইন, ভিসা প্রসেসিং ও স্কলারশিপ সহায়তা।",
+      "ইউকে, সাইপ্রাস, মালয়েশিয়া ও মাল্টায় উচ্চশিক্ষা, স্কলারশিপ ও ভিসা প্রসেসিংয়ে আপনার সবচেয়ে নির্ভরযোগ্য প্রতিষ্ঠান।",
     perks: [
-      "100% Admission Guidance",
-      "Free Bank Support Offer",
-      "Long Study Gap Accepted",
-      "Low CGPA (~2.5) Solutions",
+      "Admission Open For Any Intake!!",
+      "With / Without IELTS Options",
+      "High Visa Success Rate",
+      "Direct Discussion with Counselor",
     ],
     image: "/banner.png",
-    uniCount: "Official Banner · 10+ Nations",
-    intakes: "2026/2027 Intakes Open",
-    slug: "study-abroad-counseling",
+    uniCount: "30+ Success Stories in Banner",
+    intakes: "All Upcoming Intakes Open",
+    slug: "study-abroad",
   },
   {
-    country: "United Kingdom & Canterbury Christ Church",
-    code: "UK",
-    flag: "🇬🇧",
-    tagline: "Official Partner University & Fast-Track Degrees",
+    country: "Cyprus (Official Banner Flagship)",
+    code: "CYPRUS",
+    flag: "🇨🇾",
+    tagline: "Low Tuition from €2,500/yr · MOI Accepted · High Visa Success",
     slogan:
-      "Direct university partner admissions, 1-Year Fast Masters degrees, 2-Year Graduate Route PSW, and complete spouse/family dependent visa guidance.",
+      "Affordable European degrees, zero language barrier with Medium of Instruction (MOI) acceptance, fast processing, and generous merit scholarships.",
     bengaliSlogan:
-      "কেন্টারবেরি ক্রাইস্ট চার্চ পার্টনার অ্যাডমিশন, ১ বছরের মাস্টার্স ও ২ বছরের পিএসডব্লিউ (PSW) ওয়ার্ক পারমিট।",
+      "সাইপ্রাসে স্বল্প টিউশন ফি, IELTS ছাড়া MOI দিয়ে ভর্তি ও দ্রুত ভিসা প্রসেসিং সুবিধা।",
     perks: [
-      "Canterbury Christ Church Partner",
-      "1-Year Fast Masters Degree",
-      "2-Year Graduate Route PSW",
-      "MOI / Without IELTS Options",
+      "Tuition Starting €2,500/year",
+      "Medium of Instruction (MOI) Accepted",
+      "Fast & High Visa Approval",
+      "50% Merit Scholarships",
     ],
     image: "/banner.png",
-    uniCount: "UK Direct Admissions & Partners",
+    uniCount: "Official Flagship Banner",
+    intakes: "Spring & Fall Intakes",
+    slug: "cyprus",
+  },
+  {
+    country: "United Kingdom (London Office Support)",
+    code: "UK",
+    flag: "🇬🇧",
+    tagline: "1-Year Fast Masters · 2-Year Graduate PSW · London Liaison",
+    slogan:
+      "Confirmed university admissions, fast CAS issuance, up to £5,000 scholarships, and post-arrival student welfare backed by our London office.",
+    bengaliSlogan:
+      "ইউকে-তে ১ বছরের মাস্টার্স, ২ বছরের PSW এবং আমাদের লন্ডন অফিসের সার্বক্ষণিক সহায়তা।",
+    perks: [
+      "London Liaison Office Support",
+      "1-Year Fast Masters Degree",
+      "2-Year Graduate Route PSW",
+      "£1,500 – £5,000 Scholarships",
+    ],
+    image: "/banner.png",
+    uniCount: "UK Direct Representation",
     intakes: "Jan, May & Sept Intakes",
     slug: "uk",
   },
   {
-    country: "Cyprus & Europe Free Bank Support",
-    code: "CYPRUS",
-    flag: "🇨🇾",
-    tagline: "First 20 Students Receive Free Bank Solvency Support",
+    country: "Malaysia & Malta (Schengen Europe)",
+    code: "GATEWAY",
+    flag: "🇲🇾",
+    tagline: "Dual UK/AUS Degrees & European Schengen Island",
     slogan:
-      "Affordable European education with tuition fees starting at €2,500, Medium of Instruction (MOI) accepted, and exclusive Bank Support for early applicants.",
+      "Study at renowned British/Australian branch campuses in Malaysia or experience Schengen European education in English-speaking Malta.",
     bengaliSlogan:
-      "সাইপ্রাস ও ইউরোপে প্রথম ২০ জন শিক্ষার্থীর জন্য ফ্রি ব্যাংক সাপোর্ট এবং স্বল্প খরচে উচ্চশিক্ষা সুবিধা।",
+      "মালয়েশিয়ায় সাশ্রয়ী খরচে ব্রিটিশ ডিগ্রি এবং মাল্টায় ইউরোপীয় সেনজেন সদস্য দেশে পড়া ও কাজের সুযোগ।",
     perks: [
-      "1st 20 Students Free Bank Support",
-      "Low Tuition Starting €2,500",
-      "Medium of Instruction (MOI) Accepted",
-      "Long Study Gap & Low CGPA Accepted",
+      "Dual UK/AUS Branch Campuses",
+      "Schengen Member Country Malta",
+      "20 Hrs/Week Part-Time Work",
+      "Low Living & Study Expenses",
     ],
     image: "/banner.png",
-    uniCount: "Affordable European Track",
-    intakes: "Spring & Fall Intakes",
-    slug: "cyprus",
+    uniCount: "Official Banner Countries",
+    intakes: "Rolling Intakes Active",
+    slug: "malaysia",
   },
   {
     country: "IELTS, Spoken & Kids English Academy",
     code: "ACADEMY",
     flag: "🗣️",
-    tagline: "Target Band 7.5+ & Fluency at Dhanmondi HQ",
+    tagline: "Target Band 7.5+ · Embassy Interview Ready · Kids English",
     slogan:
-      "Cambridge authentic curriculum, British Council & IDP certified instructors, 1-on-1 speaking evaluation, and Kids English & Phonics academy.",
+      "Cambridge authentic curriculum, 12 full mock tests, 1-on-1 speaking evaluation, embassy interview simulation, and joyful Kids English Club (ages 6–14).",
     bengaliSlogan:
-      "কেমব্রিজ কারিকুলামে IELTS ব্যান্ড ৭.৫+ প্রস্তুতি, স্পোকেন ইংলিশ ফ্লুয়েন্সি এবং শিশুদের জন্য ফোনিক্স একাডেমি।",
+      "কেমব্রিজ ম্যাটেরিয়ালসে IELTS ৭.৫+ প্রস্তুতি, স্পোকেন ইংলিশ ও শিশুদের জন্য আর্লি ফোনিক্স একাডেমি।",
     perks: [
-      "Small Interactive Batches",
-      "1-on-1 Speaking Evaluation",
-      "Phonics & Fluency for Kids (5–14)",
-      "Weekly Timed Mock Examinations",
+      "Cambridge Authentic Tests",
+      "1-on-1 Speaking Drills",
+      "Embassy Interview Simulation",
+      "Kids English Club (Ages 6–14)",
     ],
     image: "/banner.png",
-    uniCount: "Target Band 7.5+ & Fluency",
-    intakes: "Morning & Evening Batches",
-    slug: "ielts-preparation",
+    uniCount: "Language Academy Wing",
+    intakes: "New Batches Weekly",
+    slug: "ielts-academy",
   },
 ];
 
 const liveSuccessToasts = [
   {
-    student: "Tanvir Ahmed",
-    action: "Canterbury Christ Church University Admission & UK Visa Approved",
-    flag: "🇬🇧",
-    time: "3 mins ago",
-  },
-  {
-    student: "Farhana Akter",
-    action: "Cyprus Student Visa Approved (Free Bank Support Claimed)",
+    student: "Mohammad Rashedul Islam",
+    action: "Cyprus Student Visa Approved with MOI (Without IELTS)",
     flag: "🇨🇾",
-    time: "12 mins ago",
+    time: "4 mins ago",
   },
   {
-    student: "Kamrul Hasan",
-    action: "Japan COE Issued & Student Visa Processed",
-    flag: "🇯🇵",
-    time: "25 mins ago",
+    student: "Tanzina Akter",
+    action: "UK University CAS Letter & Visa Granted",
+    flag: "🇬🇧",
+    time: "15 mins ago",
+  },
+  {
+    student: "Tanvir Ahmed",
+    action: "Malaysia Taylor's University Admission Confirmed",
+    flag: "🇲🇾",
+    time: "28 mins ago",
+  },
+  {
+    student: "Shahriar Hossain",
+    action: "Malta European Schengen Student Visa Issued",
+    flag: "🇲🇹",
+    time: "42 mins ago",
   },
   {
     student: "Abrar Zahin",
-    action: "Scored IELTS Overall Band 7.5 (Academic at Dhanmondi HQ)",
+    action: "Scored Overall Band 7.5 in IELTS Academic",
     flag: "🇬🇧",
-    time: "39 mins ago",
-  },
-  {
-    student: "Sumaiya Rahman",
-    action: "Italy DSU 100% Scholarship Offer Letter Received",
-    flag: "🇮🇹",
     time: "1 hour ago",
-  },
-  {
-    student: "Zayan (Age 8)",
-    action: "Enrolled in Kids' English Academy (Dhanmondi HQ)",
-    flag: "🧒",
-    time: "2 hours ago",
   },
 ];
 
@@ -183,20 +197,20 @@ export function HeroCommandCenter() {
 
   return (
     <section
-      className="relative overflow-hidden bg-gradient-to-b from-[#f0f5ff] via-[#FAFAFC] to-[#FAFAFC] pt-6 pb-14 sm:pt-10 sm:pb-20 border-b border-slate-200/80"
+      className="relative overflow-hidden bg-gradient-to-b from-[#fff7ed] via-[#FAFAFC] to-[#FAFAFC] pt-6 pb-14 sm:pt-10 sm:pb-20 border-b border-slate-200/80"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
     >
       {/* Ambient Animated Glows */}
       <motion.div
-        animate={{ scale: [1, 1.1, 1], opacity: [0.15, 0.22, 0.15] }}
+        animate={{ scale: [1, 1.1, 1], opacity: [0.15, 0.25, 0.15] }}
         transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-        className="pointer-events-none absolute -left-28 -top-28 h-96 w-96 rounded-full bg-blue-500/20 blur-[130px]"
+        className="pointer-events-none absolute -left-28 -top-28 h-96 w-96 rounded-full bg-orange-500/20 blur-[130px]"
       />
       <motion.div
-        animate={{ scale: [1, 1.15, 1], opacity: [0.1, 0.18, 0.1] }}
+        animate={{ scale: [1, 1.15, 1], opacity: [0.1, 0.2, 0.1] }}
         transition={{ duration: 10, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-        className="pointer-events-none absolute right-0 top-1/4 h-96 w-96 rounded-full bg-amber-500/15 blur-[130px]"
+        className="pointer-events-none absolute right-0 top-1/4 h-96 w-96 rounded-full bg-blue-500/15 blur-[130px]"
       />
 
       <div className="section-shell relative z-10">
@@ -206,26 +220,26 @@ export function HeroCommandCenter() {
           <div className="space-y-5">
             {/* Brand Motto Over-Title */}
             <div className="flex flex-wrap items-center gap-2">
-              <span className="text-[0.72rem] sm:text-xs font-black uppercase tracking-[0.14em] text-white bg-[#0047ba] px-3.5 py-1 rounded-full shadow-xs flex items-center gap-1.5">
-                <IconSparkles className="w-3 h-3 text-amber-300" />
-                <span>EDU GLOBAL BANGLADESH</span>
+              <span className="text-[0.72rem] sm:text-xs font-black uppercase tracking-[0.14em] text-white bg-[#f37021] px-3.5 py-1 rounded-full shadow-xs flex items-center gap-1.5">
+                <IconSparkles className="w-3 h-3 text-amber-200" />
+                <span>UNI CONSULTANTS BANGLADESH</span>
               </span>
-              <span className="text-[0.72rem] sm:text-xs font-bold text-[#0a1931] bg-white border border-slate-300 px-3 py-1 rounded-full shadow-2xs">
-                🏛️ Keari Plaza (Lift-3), Road 8/A, Dhanmondi, Dhaka
+              <span className="text-[0.72rem] sm:text-xs font-bold text-[#0f172a] bg-white border border-slate-300 px-3 py-1 rounded-full shadow-2xs">
+                📍 92 Ali Bhaban (7th Fl), Kazi Nazrul Islam Ave, Dhaka 1215
               </span>
             </div>
 
             {/* Slogan & Destination Headline */}
             <div className="space-y-2.5">
-              <h1 className="font-display text-3xl sm:text-5xl lg:text-6xl font-black text-[#0a1931] leading-[1.08] tracking-tight">
-                ONE STOP SOLUTION TO YOUR <br className="hidden sm:inline" />
-                <span className="text-[#0047ba] bg-gradient-to-r from-[#0047ba] via-blue-600 to-indigo-600 bg-clip-text text-transparent">
-                  HIGHER EDUCATION
+              <h1 className="font-display text-3xl sm:text-5xl lg:text-6xl font-black text-[#0f172a] leading-[1.08] tracking-tight">
+                ONE STOP SOLUTION FOR <br className="hidden sm:inline" />
+                <span className="text-[#f37021] bg-gradient-to-r from-[#f37021] via-orange-600 to-amber-600 bg-clip-text text-transparent">
+                  STUDY ABROAD EDUCATION
                 </span>
               </h1>
-              
+
               <p className="text-xs sm:text-sm font-bold text-slate-800 leading-snug">
-                Official Partner Admissions: UK, USA, Canada, Australia, Europe & Asia · 100% Guidance & Free Bank Support.
+                Honesty is Our Commitment · Cyprus, UK, Malaysia, Malta & Europe · With / Without IELTS Options.
               </p>
               <p className="text-xs text-slate-500 font-bangla font-medium leading-snug">
                 {company.bengaliHeadline}
@@ -241,7 +255,7 @@ export function HeroCommandCenter() {
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -6 }}
                     transition={{ duration: 0.25 }}
-                    className="inline-flex items-center gap-1.5 text-[#0047ba] font-extrabold bg-blue-50/90 px-3 py-1 rounded-lg border border-blue-200 shadow-2xs"
+                    className="inline-flex items-center gap-1.5 text-[#ea580c] font-extrabold bg-orange-50/90 px-3 py-1 rounded-lg border border-orange-200 shadow-2xs"
                   >
                     <span>{slide.flag}</span>
                     <span>{slide.country}</span>
@@ -249,20 +263,20 @@ export function HeroCommandCenter() {
                 </AnimatePresence>
               </div>
 
-              {/* Royal Blue & Amber Accent Line */}
-              <div className="h-1.5 w-36 bg-gradient-to-r from-[#0047ba] via-blue-500 to-amber-500 rounded-full mt-2" />
+              {/* Vibrant Brand Accent Line */}
+              <div className="h-1.5 w-36 bg-gradient-to-r from-[#f37021] via-orange-500 to-amber-500 rounded-full mt-2" />
             </div>
 
             {/* Live Applications Intake Pill */}
-            <div className="inline-flex items-center gap-2.5 rounded-full bg-blue-50 border border-blue-200 px-4 py-1.5 text-xs font-bold text-[#0047ba] shadow-xs">
+            <div className="inline-flex items-center gap-2.5 rounded-full bg-orange-50 border border-orange-200 px-4 py-1.5 text-xs font-bold text-[#ea580c] shadow-xs">
               <span className="beacon-dot">
-                <span className="beacon-ping bg-blue-400" />
-                <span className="beacon-core bg-blue-600" />
+                <span className="beacon-ping bg-orange-400" />
+                <span className="beacon-core bg-[#f37021]" />
               </span>
-              <span>{slide.intakes}</span>
+              <span>ADMISSION OPEN FOR ANY INTAKE!!</span>
               <span className="text-slate-300">|</span>
-              <span className="text-amber-700 bg-amber-50 px-2 py-0.5 rounded-full text-[0.68rem] font-black border border-amber-200">
-                1st 20 Free Bank Support
+              <span className="text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-full text-[0.68rem] font-black border border-emerald-200">
+                WITH / WITHOUT IELTS
               </span>
             </div>
 
@@ -292,13 +306,13 @@ export function HeroCommandCenter() {
               {company.bannerUSPs.map((usp) => (
                 <div
                   key={usp.title}
-                  className="flex items-start gap-2.5 p-2.5 rounded-xl bg-white border border-slate-200/90 shadow-2xs hover:border-[#0047ba] hover:shadow-xs transition-all duration-200 group"
+                  className="flex items-start gap-2.5 p-2.5 rounded-xl bg-white border border-slate-200/90 shadow-2xs hover:border-[#f37021] hover:shadow-xs transition-all duration-200 group"
                 >
                   <span className="text-xl shrink-0 mt-0.5 group-hover:scale-110 transition-transform">
                     {usp.icon}
                   </span>
                   <div className="min-w-0">
-                    <span className="block text-xs font-extrabold text-[#0a1931] group-hover:text-[#0047ba] transition-colors leading-tight truncate">
+                    <span className="block text-xs font-extrabold text-[#0f172a] group-hover:text-[#f37021] transition-colors leading-tight truncate">
                       {usp.title}
                     </span>
                     <span className="block text-[0.68rem] text-slate-500 font-bangla leading-tight truncate">
@@ -316,9 +330,9 @@ export function HeroCommandCenter() {
                 whileTap={{ scale: 0.97 }}
                 whileHover={{ translateY: -2 }}
                 onClick={open}
-                className="btn-shimmer inline-flex items-center justify-center gap-2 rounded-xl bg-[#0047ba] hover:bg-blue-700 text-white px-6 py-3.5 text-xs sm:text-sm font-bold shadow-lg shadow-blue-600/20 transition-all cursor-pointer"
+                className="btn-primary px-6 py-3.5 text-xs sm:text-sm shadow-lg shadow-orange-600/25 transition-all cursor-pointer"
               >
-                <span>Free Profile Assessment & Booking</span>
+                <span>Free Expert Consultation</span>
                 <IconArrowRight className="w-4 h-4 text-white" />
               </motion.button>
 
@@ -326,11 +340,11 @@ export function HeroCommandCenter() {
                 whileTap={{ scale: 0.97 }}
                 whileHover={{ translateY: -2 }}
                 href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(
-                  "Hello EDU Global! I would like to consult regarding study abroad admissions, Free Bank Support, and language training.",
+                  "Hello UNI Consultants! I would like to consult regarding study abroad admissions, With/Without IELTS options, and language training.",
                 )}`}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center justify-center gap-2 rounded-xl border border-emerald-600/40 bg-emerald-50 hover:bg-emerald-100 text-emerald-900 px-5 py-3.5 text-xs sm:text-sm font-bold transition-all shadow-xs"
+                className="inline-flex items-center justify-center gap-2 rounded-full border border-emerald-600/40 bg-emerald-50 hover:bg-emerald-100 text-emerald-900 px-5 py-3.5 text-xs sm:text-sm font-bold transition-all shadow-xs"
               >
                 <IconWhatsApp className="w-4 h-4 text-emerald-600" />
                 <span>WhatsApp: {company.whatsappFormatted}</span>
@@ -341,7 +355,7 @@ export function HeroCommandCenter() {
             <div className="pt-2 text-xs text-slate-600 font-medium flex flex-wrap items-center gap-2">
               <span className="text-amber-500 font-bold">★★★★★</span>
               <span>
-                Keari Plaza (Lift-3), Satmasjid Road, Dhanmondi, Dhaka | Hotline: {company.phones[0]}
+                92 Ali Bhaban (7th Fl), Kazi Nazrul Islam Ave, Dhaka | Hotlines: {company.phones[0]} / {company.phones[1]}
               </span>
             </div>
           </div>
@@ -378,7 +392,7 @@ export function HeroCommandCenter() {
                 <div className="font-sans text-xl sm:text-2xl font-black text-slate-900 tracking-wider leading-none">
                   {slide.code}
                 </div>
-                <div className="text-[0.62rem] font-extrabold uppercase tracking-widest text-[#0047ba] mt-1">
+                <div className="text-[0.62rem] font-extrabold uppercase tracking-widest text-[#f37021] mt-1">
                   {slide.country.split(" ")[0]}
                 </div>
               </motion.div>
@@ -444,7 +458,7 @@ export function HeroCommandCenter() {
                   onClick={() => goToSlide(idx)}
                   className={cn(
                     "h-2 rounded-full transition-all duration-300 cursor-pointer",
-                    currentSlide === idx ? "w-8 bg-[#0047ba]" : "w-2 bg-slate-300 hover:bg-slate-400",
+                    currentSlide === idx ? "w-8 bg-[#f37021]" : "w-2 bg-slate-300 hover:bg-slate-400",
                   )}
                 />
               ))}

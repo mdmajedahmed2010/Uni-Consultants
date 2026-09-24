@@ -263,11 +263,11 @@ export function PageHero({
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent" />
                   <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between text-xs text-white">
-                    <span className="rounded-full bg-slate-950/85 px-3 py-1 font-bold backdrop-blur-md border border-white/20 text-emerald-300">
-                      Keari Plaza, 4th Floor, Satmasjid Road, Dhanmondi
+                    <span className="rounded-full bg-slate-950/85 px-3 py-1 font-bold backdrop-blur-md border border-white/20 text-orange-300">
+                      92, Ali Bhaban (7th Floor), Kazi Nazrul Islam Avenue, Dhaka
                     </span>
-                    <span className="rounded-full bg-emerald-600 px-3 py-1 font-bold text-white shadow-sm">
-                      ● EDU Global
+                    <span className="rounded-full bg-orange-600 px-3 py-1 font-bold text-white shadow-sm">
+                      ● {company.name}
                     </span>
                   </div>
                 </div>
@@ -277,7 +277,7 @@ export function PageHero({
                     {company.name} · Foreign Education Advisory & Language Academy
                   </p>
                   <p className="text-[0.68rem] text-slate-400">
-                    Dhanmondi HQ · Free Bank Support & 100% Admissions · Hotline: {company.phones[0]}
+                    Principal HQ · {company.tagline} · Hotline: {company.phones[0]}
                   </p>
                 </div>
               </div>
@@ -510,31 +510,31 @@ export function CtaBand() {
         viewport={{ once: true }}
         className="section-shell relative z-10 text-center max-w-3xl mx-auto space-y-6"
       >
-        <div className="inline-flex items-center gap-2 rounded-full border border-amber-500/40 bg-amber-500/15 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-amber-300">
-          <IconGlobe className="w-3.5 h-3.5 text-emerald-400" />
-          <span>EDU Global (ইডিইউ গ্লোবাল) · Keari Plaza, Satmasjid Road, Dhanmondi, Dhaka</span>
+        <div className="inline-flex items-center gap-2 rounded-full border border-orange-500/40 bg-orange-500/15 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-orange-300">
+          <IconGlobe className="w-3.5 h-3.5 text-uni-orange" />
+          <span>{company.name} ({company.taglineBangla}) · {company.tagline}</span>
         </div>
 
         <h2 className="font-display text-3xl sm:text-5xl font-black tracking-tight text-white leading-tight">
-          Study Abroad · Free Bank Support · <span className="text-emerald-400">Achieve</span>
+          Study Abroad · Without IELTS · <span className="text-uni-orange">Achieve</span>
         </h2>
 
         <p className="text-xs sm:text-sm text-slate-300 max-w-xl mx-auto leading-relaxed font-medium">
-          Book your free advisory session with {company.name}. 100% Admission Guidance across UK, Europe, Australia, USA, Canada, New Zealand, Japan, and South Korea. Benefit from Free Bank Support, Study Gap (up to 10+ yrs) & Low CGPA acceptance, and premier Language Academy.
+          Book your free advisory session with {company.name}. 100% genuine guidance across Cyprus, UK, Malaysia, Malta, Australia, Canada, USA, and Europe. Benefit from Without IELTS options, study gap acceptance, and premier UNI Language Academy.
         </p>
 
         <div className="flex flex-wrap items-center justify-center gap-4 pt-2">
           <button
             type="button"
             onClick={open}
-            className="btn-luxury-primary text-xs sm:text-sm py-3.5 px-8 shadow-xl hover:shadow-emerald-500/30 active:scale-95 cursor-pointer font-bold bg-emerald-500 hover:bg-emerald-400 text-slate-950"
+            className="btn-primary text-xs sm:text-sm py-3.5 px-8 shadow-xl active:scale-95 cursor-pointer font-bold"
           >
             <span>Book Free Assessment</span>
             <IconArrowRight className="w-4 h-4" />
           </button>
           <a
             href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(
-              "Hello EDU Global! I would like to book a free consultation for Study Abroad admissions, Free Bank Support, and language courses.",
+              `Hello ${company.name}! I would like to book a free consultation for Study Abroad admissions and language courses.`,
             )}`}
             target="_blank"
             rel="noreferrer"

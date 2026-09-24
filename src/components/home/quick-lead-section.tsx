@@ -8,8 +8,8 @@ export function QuickLeadSection() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
-  const [destination, setDestination] = useState("United Kingdom");
-  const [courseLevel, setCourseLevel] = useState("IELTS Preparation (Band 7.5+)");
+  const [destination, setDestination] = useState("Cyprus (Banner Flagship)");
+  const [courseLevel, setCourseLevel] = useState("Study Abroad & Student Visa");
   const [studyGap, setStudyGap] = useState("No Gap / Fresh Applicant");
   const [submitted, setSubmitted] = useState(false);
 
@@ -18,14 +18,14 @@ export function QuickLeadSection() {
     setSubmitted(true);
 
     const message = encodeURIComponent(
-      `Hello EDU Global!\n\nI would like a Free Profile Assessment & Counseling Session:\n` +
+      `Hello UNI Consultants!\n\nI would like a Free Profile Assessment & Counseling Session:\n` +
         `• Name: ${name || "Applicant"}\n` +
         `• Phone: ${phone || "Not provided"}\n` +
         `• Email: ${email || "Not provided"}\n` +
         `• Desired Country: ${destination}\n` +
         `• Interested Program: ${courseLevel}\n` +
         `• Study Gap Status: ${studyGap}\n\n` +
-        `Please guide me on university admission eligibility, Free Bank Support, and IELTS/English training at your Dhanmondi Dhaka head office.`,
+        `Please guide me on university admission eligibility, With/Without IELTS options, and language academy programs at your Dhaka principal office (92 Ali Bhaban, Kazi Nazrul Islam Ave).`,
     );
 
     const waNumber = company.whatsapp.replace(/[^0-9]/g, "");
@@ -39,74 +39,74 @@ export function QuickLeadSection() {
           {/* Left Column: Trust & Highlights */}
           <SlideIn direction="left" distance={45} className="space-y-6">
             <div className="space-y-3">
-              <span className="text-xs font-black uppercase tracking-widest text-[#0047ba] bg-blue-50 px-3.5 py-1 rounded-full border border-blue-200 inline-block">
-                — EDU GLOBAL (ইডিইউ গ্লোবাল) —
+              <span className="text-xs font-black uppercase tracking-widest text-[#f37021] bg-orange-50 px-3.5 py-1 rounded-full border border-orange-200 inline-block">
+                — UNI CONSULTANTS (ইউআই কনসালট্যান্টস) —
               </span>
-              <h2 className="font-display text-3xl sm:text-5xl font-black text-[#0a1931] tracking-tight leading-tight">
+              <h2 className="font-display text-3xl sm:text-5xl font-black text-[#0f172a] tracking-tight leading-tight">
                 Start Your Higher Education Journey <br />
-                <span className="text-[#0047ba]">With Verified Confidence</span>
+                <span className="text-[#f37021]">With Honesty & Commitment</span>
               </h2>
               <p className="text-sm sm:text-base text-slate-600 font-medium leading-relaxed max-w-lg">
-                Visit our Dhanmondi Headquarters at Keari Plaza, Satmasjid Road for physical counseling, or submit your profile below for an instant WhatsApp assessment with our senior counselors.
+                Visit our Dhaka Principal Office at 92 Ali Bhaban (7th Floor), Kazi Nazrul Islam Avenue for in-person counseling, or submit your profile below for an instant WhatsApp assessment with our senior counselors.
               </p>
               <p className="text-xs text-slate-500 font-bangla">
-                কেয়ারি প্লাজা (৪র্থ তলা, লিফট-৩), রোড ৮/এ, ধানমন্ডি, ঢাকায় সরাসরি এসে অভিজ্ঞ কাউন্সেলরদের সাথে কথা বলুন।
+                ৯২ আলী ভবন (৭ম তলা), কাজী নজরুল ইসলাম এভিনিউ, ঢাকা ১২১৫ — সরাসরি এসে অভিজ্ঞ কাউন্সেলরদের সাথে কথা বলুন।
               </p>
             </div>
 
             {/* Two Side-by-Side Stat Boxes with CountUp */}
             <div className="grid grid-cols-2 gap-4 max-w-md">
-              {/* Box 1: 100% Admission Guidance */}
-              <div className="rounded-2xl border border-blue-100 bg-blue-50/50 p-5 text-center transition-all hover-lift">
-                <div className="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-2xl bg-blue-100 text-blue-700">
+              {/* Box 1: Banner Success */}
+              <div className="rounded-2xl border border-orange-100 bg-orange-50/50 p-5 text-center transition-all hover-lift">
+                <div className="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-2xl bg-orange-100 text-[#ea580c]">
                   <span className="text-xl">🎓</span>
                 </div>
-                <div className="font-display text-3xl sm:text-4xl font-extrabold text-[#0047ba]">
-                  <CountUp value={100} suffix="%" duration={2} />
+                <div className="font-display text-3xl sm:text-4xl font-extrabold text-[#f37021]">
+                  <CountUp value={30} suffix="+" duration={2} />
                 </div>
-                <div className="text-xs font-bold text-slate-700 mt-1">Admission Guidance</div>
+                <div className="text-xs font-bold text-slate-700 mt-1">Banner Success Stories</div>
               </div>
 
-              {/* Box 2: Free Bank Support */}
+              {/* Box 2: Free Assessment */}
               <div className="rounded-2xl border border-amber-100 bg-amber-50/50 p-5 text-center transition-all hover-lift">
                 <div className="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-2xl bg-amber-100 text-amber-700">
-                  <span className="text-xl">🏦</span>
+                  <span className="text-xl">🤝</span>
                 </div>
                 <div className="font-display text-3xl sm:text-4xl font-extrabold text-amber-800">
-                  <CountUp value={20} suffix=" Seats" duration={2} />
+                  <CountUp value={100} suffix="%" duration={2} />
                 </div>
-                <div className="text-xs font-bold text-slate-700 mt-1">Free Bank Support</div>
+                <div className="text-xs font-bold text-slate-700 mt-1">Honest & Free Guidance</div>
               </div>
             </div>
 
             {/* Benefit Checklist */}
             <div className="space-y-3 pt-2">
               <div className="flex items-center gap-3 text-sm font-semibold text-slate-800">
-                <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-blue-100 text-blue-700">
+                <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-orange-100 text-[#ea580c]">
                   <IconCheck className="w-3.5 h-3.5" />
                 </div>
-                <span>100% Admission Guidance (Canterbury Christ Church UK & Global Partners)</span>
+                <span>Admission Open For Any Intake!! (Cyprus, UK, Malaysia, Malta & Europe)</span>
               </div>
 
               <div className="flex items-center gap-3 text-sm font-semibold text-slate-800">
-                <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-blue-100 text-blue-700">
+                <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-orange-100 text-[#ea580c]">
                   <IconCheck className="w-3.5 h-3.5" />
                 </div>
-                <span>Free Bank Solvency Support (Exclusive Offer for First 20 Applicants)</span>
+                <span>With / Without IELTS Options (Medium of Instruction / MOI Accepted)</span>
               </div>
 
               <div className="flex items-center gap-3 text-sm font-semibold text-slate-800">
-                <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-blue-100 text-blue-700">
+                <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-orange-100 text-[#ea580c]">
                   <IconCheck className="w-3.5 h-3.5" />
                 </div>
-                <span>Long Study Gap & Low CGPA Down to 2.5+ Accepted with Legal Portfolios</span>
+                <span>High Visa Success Rate with Multi-Tier Embassy File Auditing</span>
               </div>
 
               <div className="flex items-center gap-3 text-sm font-semibold text-slate-800">
-                <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-blue-100 text-blue-700">
+                <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-orange-100 text-[#ea580c]">
                   <IconCheck className="w-3.5 h-3.5" />
                 </div>
-                <span>In-House Language Academy (IELTS Band 7.5+, Spoken English, Kids English)</span>
+                <span>Language Academy (IELTS Band 7.5+, Spoken English & Kids English)</span>
               </div>
             </div>
 
@@ -114,20 +114,20 @@ export function QuickLeadSection() {
             <div className="pt-2 flex flex-wrap items-center gap-4 text-xs font-bold text-slate-700">
               <a
                 href={`tel:${company.phones[0].replace(/[^0-9]/g, "")}`}
-                className="flex items-center gap-1.5 text-[#0a1931] hover:text-[#0047ba] transition-colors"
+                className="flex items-center gap-1.5 text-[#0f172a] hover:text-[#f37021] transition-colors"
               >
-                <IconPhone className="w-4 h-4 text-[#0047ba]" />
+                <IconPhone className="w-4 h-4 text-[#f37021]" />
                 <span>Hotline: {company.phones[0]}</span>
               </a>
               <span>•</span>
               <a
                 href={`tel:${company.phones[1].replace(/[^0-9]/g, "")}`}
-                className="hover:text-[#0047ba] transition-colors"
+                className="hover:text-[#f37021] transition-colors"
               >
                 <span>{company.phones[1]}</span>
               </a>
               <span className="hidden sm:inline">•</span>
-              <span className="text-slate-500 text-[0.72rem]">Dhanmondi, Dhaka</span>
+              <span className="text-slate-500 text-[0.72rem]">Dhaka 1215</span>
             </div>
           </SlideIn>
 
@@ -135,14 +135,14 @@ export function QuickLeadSection() {
           <SlideIn direction="right" distance={45}>
             <div className="rounded-3xl border border-slate-200/90 bg-white p-6 sm:p-8 shadow-xl relative overflow-hidden">
               <div className="border-b border-slate-100 pb-4 mb-5">
-                <div className="inline-block rounded-full bg-blue-100 text-blue-900 font-extrabold text-[0.7rem] px-3 py-1 mb-1.5">
+                <div className="inline-block rounded-full bg-orange-100 text-[#ea580c] font-extrabold text-[0.7rem] px-3 py-1 mb-1.5">
                   100% Free Initial Assessment
                 </div>
-                <h3 className="font-display text-xl sm:text-2xl font-black text-[#0a1931]">
-                  Book Free Profile Assessment
+                <h3 className="font-display text-xl sm:text-2xl font-black text-[#0f172a]">
+                  Book Free Expert Consultation
                 </h3>
                 <p className="text-xs text-slate-500 mt-1">
-                  Submit your details for personalized eligibility check and direct WhatsApp guidance from EDU Global.
+                  Submit your details for a personalized eligibility check and direct WhatsApp guidance from UNI Consultants.
                 </p>
                 <p className="text-[0.72rem] text-slate-400 font-bangla mt-0.5">
                   বুক করুন ফ্রি প্রোফাইল এসেসমেন্ট ও সিনিয়র কাউন্সেলরের সরাসরি পরামর্শ।
@@ -158,7 +158,7 @@ export function QuickLeadSection() {
                     Assessment Request Submitted Successfully!
                   </h4>
                   <p className="text-xs text-emerald-700">
-                    EDU Global (Dhanmondi, Dhaka) team is connecting with you on WhatsApp with verified admission guidance.
+                    UNI Consultants team is connecting with you on WhatsApp with verified admission guidance.
                   </p>
                 </div>
               ) : (
@@ -173,7 +173,7 @@ export function QuickLeadSection() {
                       value={name}
                       onChange={(e) => setName(e.target.value)}
                       placeholder="e.g. Tanvir Ahmed"
-                      className="w-full rounded-xl border border-slate-200 px-3.5 py-2.5 text-xs text-slate-900 outline-none focus:border-blue-600 focus:ring-1 focus:ring-blue-600/30 transition-all"
+                      className="w-full rounded-xl border border-slate-200 px-3.5 py-2.5 text-xs text-slate-900 outline-none focus:border-[#f37021] focus:ring-1 focus:ring-[#f37021]/30 transition-all"
                     />
                   </div>
 
@@ -188,7 +188,7 @@ export function QuickLeadSection() {
                         value={phone}
                         onChange={(e) => setPhone(e.target.value)}
                         placeholder="017XXXXXXXX"
-                        className="w-full rounded-xl border border-slate-200 px-3.5 py-2.5 text-xs text-slate-900 outline-none focus:border-blue-600 focus:ring-1 focus:ring-blue-600/30 transition-all"
+                        className="w-full rounded-xl border border-slate-200 px-3.5 py-2.5 text-xs text-slate-900 outline-none focus:border-[#f37021] focus:ring-1 focus:ring-[#f37021]/30 transition-all"
                       />
                     </div>
 
@@ -201,7 +201,7 @@ export function QuickLeadSection() {
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                         placeholder="yourname@gmail.com"
-                        className="w-full rounded-xl border border-slate-200 px-3.5 py-2.5 text-xs text-slate-900 outline-none focus:border-blue-600 focus:ring-1 focus:ring-blue-600/30 transition-all"
+                        className="w-full rounded-xl border border-slate-200 px-3.5 py-2.5 text-xs text-slate-900 outline-none focus:border-[#f37021] focus:ring-1 focus:ring-[#f37021]/30 transition-all"
                       />
                     </div>
                   </div>
@@ -214,20 +214,15 @@ export function QuickLeadSection() {
                       <select
                         value={destination}
                         onChange={(e) => setDestination(e.target.value)}
-                        className="w-full rounded-xl border border-slate-200 px-3 py-2.5 text-xs text-slate-900 outline-none focus:border-blue-600 focus:ring-1 focus:ring-blue-600/30 bg-white"
+                        className="w-full rounded-xl border border-slate-200 px-3 py-2.5 text-xs text-slate-900 outline-none focus:border-[#f37021] focus:ring-1 focus:ring-[#f37021]/30 bg-white"
                       >
+                        <option value="Cyprus (Banner Flagship)">Cyprus (Banner Flagship) 🇨🇾</option>
                         <option value="United Kingdom">United Kingdom (UK) 🇬🇧</option>
-                        <option value="Cyprus">Cyprus (Free Bank Support) 🇨🇾</option>
-                        <option value="United States">United States (USA) 🇺🇸</option>
-                        <option value="Canada">Canada 🇨🇦</option>
-                        <option value="Australia">Australia 🇦🇺</option>
-                        <option value="Italy">Italy (100% DSU Scholarship) 🇮🇹</option>
-                        <option value="Finland">Finland (Nordic Excellence) 🇫🇮</option>
-                        <option value="Ireland">Ireland 🇮🇪</option>
-                        <option value="Japan">Japan (Work & Study) 🇯🇵</option>
-                        <option value="South Korea">South Korea (GKS Scholarship) 🇰🇷</option>
                         <option value="Malaysia">Malaysia 🇲🇾</option>
-                        <option value="New Zealand">New Zealand 🇳🇿</option>
+                        <option value="Malta">Malta (Schengen) 🇲🇹</option>
+                        <option value="Finland">Finland 🇫🇮</option>
+                        <option value="Australia">Australia 🇦🇺</option>
+                        <option value="Canada">Canada 🇨🇦</option>
                       </select>
                     </div>
 
@@ -238,14 +233,13 @@ export function QuickLeadSection() {
                       <select
                         value={courseLevel}
                         onChange={(e) => setCourseLevel(e.target.value)}
-                        className="w-full rounded-xl border border-slate-200 px-3 py-2.5 text-xs text-slate-900 outline-none focus:border-blue-600 focus:ring-1 focus:ring-blue-600/30 bg-white"
+                        className="w-full rounded-xl border border-slate-200 px-3 py-2.5 text-xs text-slate-900 outline-none focus:border-[#f37021] focus:ring-1 focus:ring-[#f37021]/30 bg-white"
                       >
-                        <option value="IELTS Preparation (Band 7.5+)">IELTS Preparation (Target Band 7.5+)</option>
                         <option value="Study Abroad & Student Visa">Study Abroad & Student Visa Guidance</option>
-                        <option value="Free Bank Support (Cyprus & Europe)">Free Bank Support (First 20 Offer)</option>
-                        <option value="Spoken English Fluency">Spoken English Fluency</option>
-                        <option value="Kids' English Academy">Kids' English Academy (Ages 5-14)</option>
-                        <option value="Japanese Language Course">Japanese Language Course (JLPT)</option>
+                        <option value="IELTS Preparation (Academic)">IELTS Preparation (Academic Band 7.5+)</option>
+                        <option value="IELTS General Training">IELTS General Training (PR / Migration)</option>
+                        <option value="Spoken English & Interview">Spoken English & Embassy Interview</option>
+                        <option value="Kids' English Academy">Kids' English Academy (Ages 6–14)</option>
                       </select>
                     </div>
                   </div>
@@ -257,26 +251,26 @@ export function QuickLeadSection() {
                     <select
                       value={studyGap}
                       onChange={(e) => setStudyGap(e.target.value)}
-                      className="w-full rounded-xl border border-slate-200 px-3 py-2.5 text-xs text-slate-900 outline-none focus:border-blue-600 focus:ring-1 focus:ring-blue-600/30 bg-white"
+                      className="w-full rounded-xl border border-slate-200 px-3 py-2.5 text-xs text-slate-900 outline-none focus:border-[#f37021] focus:ring-1 focus:ring-[#f37021]/30 bg-white"
                     >
                       <option value="No Gap / Fresh Applicant">No Gap (Fresh Graduate / HSC)</option>
-                      <option value="1 to 3 Years Gap (Accepted)">1 to 3 Years Gap (Easily Accepted)</option>
-                      <option value="4 to 6 Years Gap (Accepted with Job Proof)">4 to 6 Years Gap (Accepted with Experience Proof)</option>
-                      <option value="7+ Years Long Gap (Accepted)">7+ Years Long Gap (Accepted with Professional Portfolio)</option>
+                      <option value="1 to 3 Years Gap (Accepted)">1 to 3 Years Gap (Accepted)</option>
+                      <option value="4 to 6 Years Gap (Accepted with Work Proof)">4 to 6 Years Gap (Accepted with Work Proof)</option>
+                      <option value="7+ Years Long Gap (Accepted)">7+ Years Long Gap (Accepted with Experience Portfolio)</option>
                     </select>
                   </div>
 
                   <motion.button
                     type="submit"
                     whileTap={{ scale: 0.98 }}
-                    className="btn-shimmer w-full rounded-xl bg-[#0047ba] hover:bg-blue-700 text-white py-3.5 text-xs sm:text-sm font-extrabold shadow-lg shadow-blue-600/20 transition-all cursor-pointer flex items-center justify-center gap-2"
+                    className="btn-primary w-full py-3.5 text-xs sm:text-sm font-extrabold shadow-lg shadow-orange-600/25 transition-all cursor-pointer flex items-center justify-center gap-2"
                   >
                     <IconWhatsApp className="w-4 h-4 text-emerald-300" />
                     <span>Send Application via WhatsApp</span>
                   </motion.button>
 
                   <p className="text-[0.68rem] text-slate-400 text-center">
-                    🔒 Your information is 100% private and protected. Zero spam calls or unwanted marketing.
+                    🔒 Your information is 100% private and protected. Zero spam calls or unverified marketing.
                   </p>
                 </form>
               )}

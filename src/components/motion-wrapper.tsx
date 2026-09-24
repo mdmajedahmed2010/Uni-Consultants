@@ -29,7 +29,7 @@ export function CountUp({
   className?: string;
 }) {
   const ref = useRef<HTMLSpanElement>(null);
-  const isInView = useInView(ref, { once: true, margin: "-40px" });
+  const isInView = useInView(ref, { once: true, margin: "50px" });
   const count = useMotionValue(0);
   const rounded = useTransform(count, (latest) => {
     if (decimals > 0) {
@@ -101,7 +101,7 @@ export function SlideIn({
     <motion.div
       initial={getInitial()}
       whileInView={{ opacity: 1, x: 0, y: 0 }}
-      viewport={{ once: true, margin: "-50px" }}
+      viewport={{ once: true, margin: "50px" }}
       transition={{
         duration,
         delay,
@@ -132,7 +132,7 @@ export function StaggerContainer({
     <motion.div
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, margin: "-40px" }}
+      viewport={{ once: true, margin: "50px" }}
       variants={{
         hidden: {},
         visible: {
@@ -222,7 +222,7 @@ export function MotionHeading({
     <motion.div
       initial={{ opacity: 0, y: 24 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-50px" }}
+      viewport={{ once: true, margin: "50px" }}
       transition={{ duration: 0.6, ease: [0.23, 1, 0.32, 1] }}
       className={cn(
         align === "center" ? "text-center max-w-2xl mx-auto" : "text-left",

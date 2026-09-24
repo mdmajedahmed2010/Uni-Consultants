@@ -1,41 +1,35 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
-import { HeroCommandCenter } from "@/components/home/hero-command-center";
-import { QuickLeadSection } from "@/components/home/quick-lead-section";
-import { StatsImpactStrip } from "@/components/home/stats-impact-strip";
-import { PopularDestinationsSection } from "@/components/home/popular-destinations-section";
-import { WhyChooseSection } from "@/components/home/why-choose-section";
-import { HowItWorksSection } from "@/components/home/how-it-works-section";
-import { DelegationSpotlight } from "@/components/home/delegation-spotlight";
-import { BlogUpdatesSection } from "@/components/home/blog-updates-section";
-import { MobileActionDock } from "@/components/home/mobile-action-dock";
-import { OfficeGallery } from "@/components/office-gallery";
-import { VideoReelsSection } from "@/components/video-reels-section";
-import { VisaPathfinder } from "@/components/home/visa-pathfinder";
+import { HeroShowcase } from "@/components/home/hero-showcase";
+import { ProofAndCredentials } from "@/components/home/proof-and-credentials";
+import { DestinationBento } from "@/components/home/destination-bento";
+import { VideoReelsCinema } from "@/components/home/video-reels-cinema";
+import { AcademyStudio } from "@/components/home/academy-studio";
+import { OfficesHub } from "@/components/home/offices-hub";
+import { HonestyManifesto } from "@/components/home/honesty-manifesto";
 import { Testimonials } from "@/components/testimonials";
-import { UniversityMarquee, CtaBand, IconSparkles } from "@/components/ui-blocks";
+import { CtaBand, IconSparkles } from "@/components/ui-blocks";
 import { faqs, company } from "@/lib/site-data";
 import { cn } from "@/lib/utils";
 import { ScrollReveal } from "@/components/scroll-reveal";
-import { LiveActivityToast } from "@/components/live-activity-toast";
 import { motion } from "framer-motion";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       {
-        title: `${company.name} | Study Abroad Consultancy & IELTS Language Academy | Dhanmondi, Dhaka`,
+        title: `${company.name} | Study Abroad Consultancy & Language Academy | Dhaka, Bangladesh`,
       },
       {
         name: "description",
         content:
-          "EDU Global — Your Gateway to the World! Europe, UK, USA, Canada, Australia, New Zealand, Japan, South Korea, and Malaysia. 100% Admission Guidance, Free Bank Support Offer, Study Gap Accepted, Low CGPA Solutions. Head Office: Keari Plaza (Lift-3), Road 8/A, Dhanmondi, Dhaka. Hotlines: +880 1901-402990, +880 1901-402992.",
+          `${company.name} — One Stop Solution for Study Abroad Education. Honesty is Our Commitment. Study in Cyprus, UK, Malaysia, Malta, Finland, Australia, Canada with or without IELTS. Dhaka Principal Office: 92, Ali Bhaban (7th Floor), Kazi Nazrul Islam Avenue, Dhaka 1215. Hotlines: +880 1335-065544, +880 1335-065540.`,
       },
-      { property: "og:title", content: `${company.name} — Your Gateway to the World | Study Abroad & Language Academy` },
+      { property: "og:title", content: `${company.name} — Honesty is Our Commitment | Study Abroad & Language Academy` },
       {
         property: "og:description",
         content:
-          "One stop Solution to Your Journey of Higher Education. 100% Admission Guidance, Free Bank Support Offer, Study Gap Accepted. Head Office: Dhanmondi, Dhaka.",
+          "One Stop Solution for Study Abroad Education. Flagship admissions in Cyprus, UK, Malaysia, Malta with or without IELTS. Principal Office: 92, Ali Bhaban (7th Floor), Kazi Nazrul Islam Avenue, Dhaka 1215.",
       },
     ],
   }),
@@ -48,153 +42,101 @@ function Home() {
 
   const faqCategories = [
     "All",
-    "Admission Guidance",
-    "Free Bank Support",
-    "Study Gap & CGPA",
-    "Destinations",
-    "Dhanmondi Office",
+    "Cyprus & Europe",
+    "With / Without IELTS",
+    "UK & Global",
+    "Language Academy",
+    "Offices & Contact",
   ];
 
   const filteredFaqs =
     activeFaqCategory === "All"
       ? faqs
       : faqs.filter((f) => {
-          if (activeFaqCategory === "Admission Guidance")
+          if (activeFaqCategory === "Cyprus & Europe")
             return (
-              f.q.toLowerCase().includes("admission") ||
-              f.q.toLowerCase().includes("guidance") ||
-              f.a.toLowerCase().includes("admission") ||
-              f.a.toLowerCase().includes("guidance")
+              f.q.toLowerCase().includes("cyprus") ||
+              f.a.toLowerCase().includes("cyprus") ||
+              f.q.toLowerCase().includes("europe") ||
+              f.a.toLowerCase().includes("europe") ||
+              f.a.toLowerCase().includes("malta")
             );
-          if (activeFaqCategory === "Free Bank Support")
+          if (activeFaqCategory === "With / Without IELTS")
             return (
-              f.q.toLowerCase().includes("bank") ||
-              f.a.toLowerCase().includes("bank") ||
-              f.a.toLowerCase().includes("solvency")
+              f.q.toLowerCase().includes("ielts") ||
+              f.a.toLowerCase().includes("without ielts") ||
+              f.a.toLowerCase().includes("moi")
             );
-          if (activeFaqCategory === "Study Gap & CGPA")
+          if (activeFaqCategory === "UK & Global")
             return (
-              f.q.toLowerCase().includes("gap") ||
-              f.q.toLowerCase().includes("cgpa") ||
-              f.a.toLowerCase().includes("gap") ||
-              f.a.toLowerCase().includes("cgpa")
+              f.q.toLowerCase().includes("uk") ||
+              f.a.toLowerCase().includes("uk") ||
+              f.q.toLowerCase().includes("malaysia") ||
+              f.a.toLowerCase().includes("malaysia")
             );
-          if (activeFaqCategory === "Destinations")
+          if (activeFaqCategory === "Language Academy")
             return (
-              f.q.toLowerCase().includes("destination") ||
-              f.q.toLowerCase().includes("countries") ||
-              f.a.toLowerCase().includes("countries") ||
-              f.a.toLowerCase().includes("europe")
+              f.q.toLowerCase().includes("academy") ||
+              f.q.toLowerCase().includes("spoken") ||
+              f.q.toLowerCase().includes("kids") ||
+              f.a.toLowerCase().includes("speaking") ||
+              f.a.toLowerCase().includes("ielts")
             );
-          if (activeFaqCategory === "Dhanmondi Office")
+          if (activeFaqCategory === "Offices & Contact")
             return (
-              f.q.toLowerCase().includes("dhanmondi") ||
+              f.q.toLowerCase().includes("office") ||
               f.q.toLowerCase().includes("located") ||
               f.q.toLowerCase().includes("contact") ||
-              f.a.toLowerCase().includes("dhanmondi") ||
-              f.a.toLowerCase().includes("keari")
+              f.a.toLowerCase().includes("bhaban") ||
+              f.a.toLowerCase().includes("dhaka")
             );
           return true;
         });
 
   return (
-    <div className="relative min-h-screen bg-[#FAFAFC] text-slate-900 selection:bg-blue-600 selection:text-white">
-      {/* 1. Destination Hero Slider with Real-time Success Toast */}
-      <HeroCommandCenter />
+    <div className="relative min-h-screen bg-[#070B16] text-slate-100 selection:bg-orange-500 selection:text-white">
+      {/* 1. Grand Opening: Hero Showcase with Double-Bezel Concierge & Banner Lightbox */}
+      <HeroShowcase />
 
-      {/* 2. Impact Stats ("Learn · Grow · Achieve") */}
-      <ScrollReveal direction="up" delay={50}>
-        <StatsImpactStrip />
-      </ScrollReveal>
+      {/* 2. The Proof Stage: Real Metrics & Accredited Institutions */}
+      <ProofAndCredentials />
 
-      {/* 3. Official Facebook Video Reels Showcase — Elevated for Immediate Proof */}
-      <ScrollReveal direction="up" delay={50}>
-        <VideoReelsSection />
-      </ScrollReveal>
+      {/* 3. Asymmetrical Flagship Destination Bento Grid (Cyprus, UK, Malaysia, Malta, Global) */}
+      <DestinationBento />
 
-      {/* 4. Interactive Visa Pathfinder / Eligibility Matcher */}
-      <ScrollReveal direction="up" delay={60}>
-        <VisaPathfinder />
-      </ScrollReveal>
+      {/* 4. The Facebook Video Reels Cinema Theater Mode */}
+      <VideoReelsCinema />
 
-      {/* 5. Partner Institutions Showcase & Marquee */}
-      <ScrollReveal direction="fade" delay={50}>
-        <UniversityMarquee />
-      </ScrollReveal>
+      {/* 5. UNI Language Academy Interactive Learning Studio */}
+      <AcademyStudio />
 
-      {/* 6. Popular Study Destinations Grid */}
-      <ScrollReveal direction="up" delay={60}>
-        <PopularDestinationsSection />
-      </ScrollReveal>
+      {/* 6. Strategic Presence: 4 Physical Branches Spatial Switcher */}
+      <OfficesHub />
 
-      {/* 7. Language Academy & Core Pillars (IELTS, Spoken, Kids, Japanese) */}
-      <ScrollReveal direction="up" delay={60}>
-        <DelegationSpotlight />
-      </ScrollReveal>
+      {/* 7. The Honesty Manifesto: Why Students Trust UNI Consultants */}
+      <HonestyManifesto />
 
-      {/* 8. Fast-Track Lead Form & Side-by-Side Stat Highlights */}
-      <ScrollReveal direction="up" delay={60}>
-        <QuickLeadSection />
-      </ScrollReveal>
+      {/* 8. Voice of Real Students: Testimonials */}
+      <Testimonials />
 
-      {/* 9. Why Choose EDU Global (The 6 Verified USPs) */}
-      <ScrollReveal direction="up" delay={60}>
-        <WhyChooseSection />
-      </ScrollReveal>
-
-      {/* 10. 5-Step Process Timeline ("How It Works") */}
-      <ScrollReveal direction="up" delay={60}>
-        <HowItWorksSection />
-      </ScrollReveal>
-
-      {/* 11. Official Headquarters & Counseling Center */}
-      <ScrollReveal direction="up" delay={60}>
-        <section className="section-shell py-14 sm:py-20 border-t border-slate-200/80">
-          <div className="text-center max-w-2xl mx-auto mb-10">
-            <div className="inline-flex items-center gap-2 rounded-full bg-blue-50 border border-blue-200 px-3.5 py-1 text-xs font-bold text-[#0047ba] mb-2.5">
-              <IconSparkles className="w-3.5 h-3.5 text-blue-600" />
-              <span>Headquarters & Counseling Center</span>
+      {/* 9. Minimalist Categorized FAQ Accordion with Animated Pill */}
+      <section className="bg-[#0A1020] py-20 sm:py-28 border-t border-white/10 text-white">
+        <div className="section-shell">
+          <div className="text-center max-w-2xl mx-auto mb-12">
+            <div className="inline-flex items-center gap-2 rounded-full bg-orange-500/15 border border-orange-500/30 px-3.5 py-1 text-xs font-bold text-orange-400 mb-2.5">
+              <IconSparkles className="w-3.5 h-3.5 text-orange-400" />
+              <span>Transparent Answers</span>
             </div>
-            <h2 className="font-display text-2xl sm:text-4xl font-black text-slate-900 tracking-tight">
-              EDU Global <span className="text-[#0047ba]">Dhanmondi, Dhaka</span>
+            <h2 className="font-display text-3xl sm:text-5xl font-black text-white tracking-tight">
+              Frequently Asked <span className="text-orange-400">Questions</span>
             </h2>
-            <p className="text-xs sm:text-sm text-slate-600 mt-1">
-              Keari Plaza, Plot No- 83, 4th Floor (Lift-3), Road No- 8/A, Satmasjid Road, Dhanmondi, Dhaka - 1209 — Direct physical counseling & expert visa advisory.
-            </p>
-          </div>
-
-          <OfficeGallery />
-        </section>
-      </ScrollReveal>
-
-      {/* 12. Student Testimonials ("What our students say") */}
-      <ScrollReveal direction="up" delay={60}>
-        <Testimonials />
-      </ScrollReveal>
-
-      {/* 13. Latest Updates / Blog Grid */}
-      <ScrollReveal direction="up" delay={60}>
-        <BlogUpdatesSection />
-      </ScrollReveal>
-
-      {/* 14. Minimalist Categorized FAQ Accordion with Animated Pill */}
-      <ScrollReveal direction="up" delay={60}>
-        <section className="section-shell py-14 sm:py-20 border-t border-slate-200/80">
-          <div className="text-center max-w-2xl mx-auto mb-8">
-            <div className="inline-flex items-center gap-2 rounded-full bg-blue-50 border border-blue-200 px-3.5 py-1 text-xs font-bold text-blue-700 mb-2.5">
-              <IconSparkles className="w-3.5 h-3.5 text-blue-600" />
-              <span>Clear Answers</span>
-            </div>
-            <h2 className="font-display text-2xl sm:text-4xl font-black text-slate-900 tracking-tight">
-              Frequently Asked <span className="text-[#0047ba]">Questions</span>
-            </h2>
-            <p className="text-xs sm:text-sm text-slate-600 mt-1">
-              Direct, transparent answers regarding 100% admission guidance, Free Bank Support offer, study gap acceptance, language preparation, and our Dhanmondi office.
+            <p className="text-xs sm:text-sm text-slate-300 mt-2 font-medium">
+              Direct, transparent answers regarding admissions, With / Without IELTS pathways, tuition fees, and our branch offices.
             </p>
           </div>
 
           {/* FAQ Category Filter Pills with layoutId */}
-          <div className="flex flex-wrap justify-center gap-2 mb-8">
+          <div className="flex flex-wrap justify-center gap-2 mb-10">
             {faqCategories.map((cat) => {
               const isActive = activeFaqCategory === cat;
               return (
@@ -207,13 +149,13 @@ function Home() {
                   }}
                   className={cn(
                     "relative rounded-full px-4 py-2 text-xs font-bold transition-colors cursor-pointer active:scale-95",
-                    isActive ? "text-white" : "text-slate-700 hover:text-slate-900 bg-white border border-slate-200",
+                    isActive ? "text-white" : "text-slate-400 hover:text-white bg-white/5 border border-white/10",
                   )}
                 >
                   {isActive && (
                     <motion.div
                       layoutId="activeFaqPill"
-                      className="absolute inset-0 rounded-full bg-[#0047ba] shadow-sm"
+                      className="absolute inset-0 rounded-full bg-gradient-to-r from-orange-500 to-amber-500 shadow-md"
                       transition={{ type: "spring", stiffness: 380, damping: 30 }}
                     />
                   )}
@@ -233,8 +175,8 @@ function Home() {
                   className={cn(
                     "rounded-2xl border transition-all duration-300 overflow-hidden",
                     isOpen
-                      ? "bg-white border-blue-500 shadow-md ring-1 ring-blue-500/20"
-                      : "bg-white/80 border-slate-200 hover:border-slate-300 hover:bg-white",
+                      ? "bg-white/[0.06] border-orange-500 shadow-lg ring-1 ring-orange-500/30"
+                      : "bg-white/[0.02] border-white/10 hover:border-white/20 hover:bg-white/[0.04]",
                   )}
                 >
                   <button
@@ -242,46 +184,35 @@ function Home() {
                     onClick={() => setOpenFaqIndex(isOpen ? null : idx)}
                     className="w-full text-left p-4 sm:p-5 flex items-center justify-between gap-4 cursor-pointer active:scale-[0.99] transition-transform"
                   >
-                    <span className="font-display text-sm sm:text-base font-bold text-slate-900">
+                    <span className="font-display text-sm sm:text-base font-bold text-white">
                       {faq.q}
                     </span>
                     <span
                       className={cn(
-                        "flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-xs font-bold transition-transform duration-300",
-                        isOpen ? "bg-[#0047ba] text-white rotate-180" : "bg-slate-100 text-slate-600",
+                        "flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-xs font-bold transition-transform duration-300",
+                        isOpen
+                          ? "bg-orange-500 text-white rotate-180"
+                          : "bg-white/10 text-slate-400",
                       )}
                     >
                       ↓
                     </span>
                   </button>
 
-                  <div
-                    className={cn(
-                      "grid transition-all duration-300 ease-in-out",
-                      isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0",
-                    )}
-                  >
-                    <div className="overflow-hidden">
-                      <div className="px-4 pb-5 sm:px-5 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3 font-medium">
-                        <p>{faq.a}</p>
-                      </div>
+                  {isOpen && (
+                    <div className="px-5 pb-5 pt-1 text-xs sm:text-sm text-slate-300 leading-relaxed font-medium border-t border-white/5">
+                      {faq.a}
                     </div>
-                  </div>
+                  )}
                 </div>
               );
             })}
           </div>
-        </section>
-      </ScrollReveal>
+        </div>
+      </section>
 
-      {/* 15. Pre-Footer High-Converting Banner */}
+      {/* 10. Final Call to Action */}
       <CtaBand />
-
-      {/* 16. Ergonomic Floating Thumb Action Dock on Mobile */}
-      <MobileActionDock />
-
-      {/* 17. Live Real-Time Success Activity Toast */}
-      <LiveActivityToast />
     </div>
   );
 }

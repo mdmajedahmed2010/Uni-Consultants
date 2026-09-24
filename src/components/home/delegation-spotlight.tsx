@@ -13,40 +13,40 @@ export function DelegationSpotlight() {
 
   const visaCategories = [
     { name: "100% Admission Guidance", icon: "🎓" },
-    { name: "Free Bank Support Offer", icon: "🏛️" },
+    { name: "With / Without IELTS Options", icon: "✨" },
     { name: "IELTS Prep (Band 7.5+)", icon: "🎯" },
-    { name: "Spoken English Fluency", icon: "🗣️" },
-    { name: "Kids' English Academy", icon: "🧒" },
-    { name: "Japanese Language (JLPT)", icon: "🇯🇵" },
-    { name: "Canterbury Christ Church Partner", icon: "🇬🇧" },
-    { name: "Cyprus & Europe Visa Track", icon: "🇨🇾" },
+    { name: "Spoken English & Interview", icon: "🗣️" },
+    { name: "Kids' English Academy (6–14)", icon: "🧒" },
+    { name: "Cyprus Flagship Admissions", icon: "🇨🇾" },
+    { name: "UK 1-Yr Masters & PSW", icon: "🇬🇧" },
+    { name: "Malaysia & Malta Schengen", icon: "🇲🇾" },
   ];
 
   return (
     <section className="section-shell py-10 sm:py-16">
       <div className="rounded-3xl border border-slate-800 bg-[#07132b] p-5 sm:p-8 lg:p-12 relative overflow-hidden text-white shadow-2xl">
         {/* Ambient Glow */}
-        <div className="pointer-events-none absolute -top-20 -left-20 h-80 w-80 rounded-full bg-blue-500/15 blur-[100px]" />
-        <div className="pointer-events-none absolute -bottom-20 -right-20 h-80 w-80 rounded-full bg-amber-500/15 blur-[100px]" />
+        <div className="pointer-events-none absolute -top-20 -left-20 h-80 w-80 rounded-full bg-orange-500/15 blur-[100px]" />
+        <div className="pointer-events-none absolute -bottom-20 -right-20 h-80 w-80 rounded-full bg-blue-500/15 blur-[100px]" />
 
         <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center relative z-10">
           {/* Left: Language Academy Interactive Course Selector */}
           <SlideIn direction="left" distance={45} className="space-y-5">
-            <div className="inline-flex items-center gap-2 rounded-full bg-blue-500/20 border border-blue-400/30 px-3.5 py-1 text-xs font-bold text-blue-300">
-              <IconSparkles className="w-3.5 h-3.5" />
-              <span>EDU Global Language Academy · Dhanmondi HQ</span>
+            <div className="inline-flex items-center gap-2 rounded-full bg-orange-500/20 border border-orange-400/30 px-3.5 py-1 text-xs font-bold text-orange-300">
+              <IconSparkles className="w-3.5 h-3.5 text-orange-400" />
+              <span>UNI Consultants Language Academy · Dhaka HQ</span>
             </div>
 
             <h2 className="font-display text-2xl sm:text-4xl font-black text-white tracking-tight leading-snug">
               Master IELTS, Spoken English & Global Visas <br />
-              <span className="text-blue-400">British Council Aligned & 100% Admission Guidance</span>
+              <span className="text-orange-400">Honesty is Our Commitment · Certified Coaching</span>
             </h2>
 
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed max-w-xl">
-              Achieve your target IELTS band score (7.5+), overcome English speaking hesitation, or give your children an early linguistic foundation at our modern Dhanmondi campus.
+              Achieve your target IELTS band score (7.5+), overcome English speaking hesitation, or give your children an early linguistic foundation at our modern Dhaka and branch campuses.
             </p>
             <p className="text-xs text-slate-400 font-bangla max-w-xl">
-              আইইএলটিএস পরীক্ষায় কাঙ্ক্ষিত ব্যান্ড স্কোর কিংবা বিশ্বমানের উচ্চশিক্ষা—অভিজ্ঞ মেন্টর ও স্বচ্ছ ভিসা গাইডলাইন।
+              আইইএলটিএস পরীক্ষায় কাঙ্ক্ষিত ব্যান্ড স্কোর কিংবা বিশ্বমানের উচ্চশিক্ষা—অভিজ্ঞ মেন্টর ও শতভাগ সৎ ভিসা গাইডলাইন।
             </p>
 
             {/* Course Selector Tabs with Animated Sliding Pill */}
@@ -66,7 +66,7 @@ export function DelegationSpotlight() {
                     {isActive && (
                       <motion.div
                         layoutId="activeSpotlightCoursePill"
-                        className="absolute inset-0 rounded-xl bg-[#0047ba] border border-blue-400 shadow-md"
+                        className="absolute inset-0 rounded-xl bg-gradient-to-r from-orange-500 to-amber-500 border border-orange-400 shadow-md"
                         transition={{ type: "spring", stiffness: 400, damping: 30 }}
                       />
                     )}
@@ -92,20 +92,20 @@ export function DelegationSpotlight() {
                 >
                   <div className="flex flex-wrap items-center justify-between gap-2">
                     <span className="font-display font-bold text-base text-white flex items-center gap-2">
-                      <span>{currentCourse.icon}</span>
+                      <span>{currentCourse.icon || "🎓"}</span>
                       <span>{currentCourse.title}</span>
                     </span>
-                    <span className="rounded-full bg-blue-500/20 text-blue-300 border border-blue-500/30 px-2.5 py-0.5 text-[0.68rem] font-bold">
-                      {currentCourse.targetOutcome}
+                    <span className="rounded-full bg-orange-500/20 text-orange-300 border border-orange-500/30 px-2.5 py-0.5 text-[0.68rem] font-bold">
+                      {currentCourse.targetOutcome || currentCourse.badge}
                     </span>
                   </div>
 
                   <p className="text-xs text-slate-300 leading-relaxed font-medium">
-                    {currentCourse.description}
+                    {currentCourse.description || currentCourse.desc}
                   </p>
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-1">
-                    {currentCourse.highlights.slice(0, 4).map((h) => (
+                    {(currentCourse.highlights ?? currentCourse.features ?? []).slice(0, 4).map((h) => (
                       <div key={h} className="flex items-start gap-2 text-[0.72rem] text-slate-300">
                         <IconCheck className="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5" />
                         <span>{h}</span>
@@ -123,7 +123,7 @@ export function DelegationSpotlight() {
                 whileTap={{ scale: 0.97 }}
                 whileHover={{ translateY: -2 }}
                 onClick={open}
-                className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#0047ba] hover:bg-blue-600 text-white px-6 py-3 text-xs sm:text-sm font-bold shadow-lg transition-all cursor-pointer"
+                className="inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-white px-6 py-3 text-xs sm:text-sm font-bold shadow-lg transition-all cursor-pointer"
               >
                 <span>Book Free Academy Assessment</span>
                 <IconArrowRight className="w-4 h-4" />
@@ -133,7 +133,7 @@ export function DelegationSpotlight() {
                 whileTap={{ scale: 0.97 }}
                 whileHover={{ translateY: -2 }}
                 href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(
-                  `Hello EDU Global! I would like to inquire about the ${currentCourse.title} at your Dhanmondi campus.`,
+                  `Hello ${company.name}! I would like to inquire about the ${currentCourse.title} at your Dhaka office.`,
                 )}`}
                 target="_blank"
                 rel="noreferrer"
@@ -149,18 +149,18 @@ export function DelegationSpotlight() {
           <SlideIn direction="right" distance={45}>
             <div className="rounded-2xl border border-slate-700/80 bg-slate-900/60 p-6 space-y-4">
               <div className="border-b border-slate-800 pb-3">
-                <span className="text-xs font-black uppercase tracking-widest text-blue-400">
+                <span className="text-xs font-black uppercase tracking-widest text-orange-400">
                   Comprehensive Education Portfolio
                 </span>
                 <h3 className="font-display text-lg font-bold text-white mt-1">
-                  EDU Global Services & Wings
+                  UNI Consultants Services & Wings
                 </h3>
               </div>
 
               <StaggerContainer staggerDelay={0.05} className="grid grid-cols-2 gap-2.5">
                 {visaCategories.map((item) => (
                   <StaggerItem key={item.name}>
-                    <div className="flex items-center gap-2.5 p-3 rounded-xl bg-slate-800/60 border border-slate-700/60 hover:border-blue-400/60 transition-colors">
+                    <div className="flex items-center gap-2.5 p-3 rounded-xl bg-slate-800/60 border border-slate-700/60 hover:border-orange-400/60 transition-colors">
                       <span className="text-xl">{item.icon}</span>
                       <span className="text-xs font-semibold text-slate-200">{item.name}</span>
                     </div>
@@ -169,7 +169,7 @@ export function DelegationSpotlight() {
               </StaggerContainer>
 
               <div className="pt-3 border-t border-slate-800/80 flex items-center justify-between text-xs text-slate-400">
-                <span>📍 Keari Plaza, Dhanmondi, Dhaka</span>
+                <span>📍 92 Ali Bhaban (7th Fl), Kazi Nazrul Islam Ave, Dhaka</span>
                 <span className="text-emerald-400 font-semibold">● Admissions Open</span>
               </div>
             </div>

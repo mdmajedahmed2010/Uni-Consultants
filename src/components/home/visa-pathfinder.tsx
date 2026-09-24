@@ -18,24 +18,59 @@ const educationLevels = [
 const englishProficiency = [
   { id: "ielts", label: "IELTS (Academic & General)", badge: "Target Band 7.5+" },
   { id: "spoken", label: "Spoken English Fluency", badge: "Interview Mastery" },
-  { id: "kids", label: "Kids' English Academy", badge: "Ages 5–14 & Phonics" },
-  { id: "moi", label: "Without IELTS (MOI Option)", badge: "Cyprus & Europe" },
+  { id: "kids", label: "Kids' English Academy", badge: "Ages 6–14 & Phonics" },
+  { id: "moi", label: "Without IELTS Options", badge: "Cyprus, Malaysia & Malta" },
 ];
 
 const destinationPreferences = [
   {
-    id: "uk",
-    name: "United Kingdom",
-    flag: "🇬🇧",
-    tag: "Canterbury Christ Church Partner",
-    partner: "1-Yr Masters & 2-Yr PSW",
-  },
-  {
     id: "cyprus",
     name: "Cyprus (Europe)",
     flag: "🇨🇾",
-    tag: "1st 20 Free Bank Support",
-    partner: "Low Fees from €2,500",
+    tag: "Tuition from €2,500/Yr",
+    partner: "Without IELTS Options",
+  },
+  {
+    id: "uk",
+    name: "United Kingdom",
+    flag: "🇬🇧",
+    tag: "1-Yr Masters & 2-Yr PSW",
+    partner: "Top Rated Universities",
+  },
+  {
+    id: "malaysia",
+    name: "Malaysia",
+    flag: "🇲🇾",
+    tag: "Affordable & Fast Visa",
+    partner: "UK/Aus Dual Degrees",
+  },
+  {
+    id: "malta",
+    name: "Malta (Schengen)",
+    flag: "🇲🇹",
+    tag: "Schengen Country",
+    partner: "Part-Time Work Rights",
+  },
+  {
+    id: "finland",
+    name: "Finland",
+    flag: "🇫🇮",
+    tag: "Nordic Education",
+    partner: "30 Hrs/Wk Work Rights",
+  },
+  {
+    id: "australia",
+    name: "Australia",
+    flag: "🇦🇺",
+    tag: "Spouse Work Rights",
+    partner: "Subclass 500 Visa",
+  },
+  {
+    id: "canada",
+    name: "Canada",
+    flag: "🇨🇦",
+    tag: "PGWP & PR Pathways",
+    partner: "Top DLI Colleges",
   },
   {
     id: "usa",
@@ -44,61 +79,26 @@ const destinationPreferences = [
     tag: "3-Year STEM OPT",
     partner: "Merit Scholarships",
   },
-  {
-    id: "canada",
-    name: "Canada",
-    flag: "🇨🇦",
-    tag: "PGWP & PR Pathways",
-    partner: "Top Public Colleges",
-  },
-  {
-    id: "australia",
-    name: "Australia",
-    flag: "🇦🇺",
-    tag: "Spouse Full Work Rights",
-    partner: "Subclass 500 Visa",
-  },
-  {
-    id: "italy",
-    name: "Italy (Schengen)",
-    flag: "🇮🇹",
-    tag: "100% DSU Regional Award",
-    partner: "29 European Nations",
-  },
-  {
-    id: "japan",
-    name: "Japan",
-    flag: "🇯🇵",
-    tag: "Work & Study Track",
-    partner: "COE & JLPT Support",
-  },
-  {
-    id: "malaysia",
-    name: "Malaysia",
-    flag: "🇲🇾",
-    tag: "HELP & MMU Partner",
-    partner: "Fast Visa & Low Cost",
-  },
 ];
 
 export function VisaPathfinder() {
   const { open } = useRegisterModal();
   const [eduLevel, setEduLevel] = useState("bachelor");
   const [english, setEnglish] = useState("ielts");
-  const [destination, setDestination] = useState("uk");
+  const [destination, setDestination] = useState("cyprus");
 
-  // Dynamic computation logic based on official EDU Global verified pathways
+  // Dynamic computation logic based on official UNI Consultants verified pathways
   const getMatchData = () => {
     if (english === "kids") {
       return {
         matchScore: 100,
-        title: "EDU Global Kids' English Academy (Ages 5–14)",
+        title: "UNI Consultants Kids' English Academy (Ages 6–14)",
         headline: "Phonics, Interactive Storytelling & Confident Speaking for Children",
-        timeline: "Weekend & After-School Batches at Dhanmondi HQ",
-        scholarship: "Free Initial Linguistic Assessment & Parent Orientation",
+        timeline: "Weekend & After-School Batches at Dhaka HQ & Farmgate",
+        scholarship: "Free Initial Linguistic Assessment & Demo Session",
         moiAccepted: "Joyful English immersion, British phonics pronunciation & vocabulary building",
         partnerNote:
-          "Conducted at our child-friendly campus at Keari Plaza (Lift-3), Road 8/A, Satmasjid Road, Dhanmondi, Dhaka with certified instructors.",
+          "Conducted at our modern campuses: 92, Ali Bhaban (7th Floor), Kazi Nazrul Islam Avenue & Farmgate Branch with certified child educators.",
         actionType: "course",
       };
     }
@@ -106,13 +106,13 @@ export function VisaPathfinder() {
     if (english === "spoken") {
       return {
         matchScore: 98,
-        title: "Spoken English Fluency & Professional Communication",
-        headline: "Overcome Speaking Hesitation, Refine Accent & Master Embassy Interviews",
+        title: "Spoken English Fluency & Embassy Interview Mastery",
+        headline: "Overcome Speaking Hesitation, Refine Accent & Pass Embassy Interviews",
         timeline: "2 to 3 Months Intensive Practical Drills",
-        scholarship: "Free Fluency Level Evaluation & Public Speaking Clinics",
-        moiAccepted: "Real-world conversations, corporate presentation drills & interview simulations",
+        scholarship: "Free Fluency Level Evaluation & Presentation Clinics",
+        moiAccepted: "Real-world conversations, professional presentation drills & visa mock interviews",
         partnerNote:
-          "Small interactive batches at our Dhanmondi Headquarters designed for university students, career professionals, and visa applicants.",
+          "Small interactive batches at 92 Ali Bhaban HQ, Farmgate, and Habiganj designed for students, professionals, and visa applicants.",
         actionType: "course",
       };
     }
@@ -120,13 +120,13 @@ export function VisaPathfinder() {
     if (destination === "cyprus") {
       return {
         matchScore: 100,
-        title: "Cyprus Higher Education Track (Free Bank Support Offer)",
-        headline: "Exclusive Free Bank Support for First 20 Applicants & Low Tuition Fees",
-        timeline: "Spring & Fall Intakes · Fast 3-Week Offer Letters",
+        title: "Cyprus Higher Education Pathway (With / Without IELTS)",
+        headline: "Low Tuition Fees from €2,500/Year, Part-Time Work & High Visa Success Ratio",
+        timeline: "Fall & Spring Intakes · Fast Offer Letter Issuance",
         scholarship: "Affordable Annual Tuition Starting from €2,500",
-        moiAccepted: "Medium of Instruction (MOI) 100% Accepted / No Mandatory IELTS",
+        moiAccepted: "Medium of Instruction (MOI) Accepted / Without IELTS Options Available",
         partnerNote:
-          "Official banner campaign. Long study gap and CGPA down to 2.5 accepted. Free bank solvency support provided from Dhanmondi Dhaka HQ.",
+          "Official banner flagship destination. Gap years and low CGPA accepted. Comprehensive visa file preparation with honesty and commitment.",
         actionType: "abroad",
       };
     }
@@ -134,27 +134,55 @@ export function VisaPathfinder() {
     if (destination === "uk") {
       return {
         matchScore: 99,
-        title: "United Kingdom — Canterbury Christ Church University Partner",
-        headline: "1-Year Fast-Track Master's Degree & 2-Year Graduate Route PSW",
-        timeline: "Direct Partner Admissions for Jan, May & September Intakes",
+        title: "United Kingdom — Top Universities & Fast-Track Degrees",
+        headline: "1-Year Master's Degree & 2-Year Graduate Route Post-Study Work (PSW)",
+        timeline: "Admission Open For Any Intake (Jan, May & Sept)",
         scholarship: "£1,500 – £4,000 University Merit Bursaries",
         moiAccepted: "IELTS 6.0–6.5 or MOI waivers in select degree pathways",
         partnerNote:
-          "EDU Global is an official partner representative. Full assistance for student visa and spouse/dependent family relocation.",
+          "UNI Consultants provides end-to-end guidance for university applications, CAS issuance, and student visa filing.",
         actionType: "abroad",
       };
     }
 
-    if (destination === "italy") {
+    if (destination === "malaysia") {
+      return {
+        matchScore: 99,
+        title: "Malaysia Higher Education & UK/Aus Twinning Programs",
+        headline: "Affordable World-Class Degrees, Fast EMGS Visa & Safe Multicultural Environment",
+        timeline: "Multiple Intakes Throughout the Year",
+        scholarship: "Tuition Fees from $3,000 – $5,000 / year",
+        moiAccepted: "Without IELTS / English Medium accepted in top private universities",
+        partnerNote:
+          "Complete EMGS tracking, offer letter processing, and pre-departure briefings by UNI Consultants experts.",
+        actionType: "abroad",
+      };
+    }
+
+    if (destination === "malta") {
       return {
         matchScore: 98,
-        title: "Italy Public Universities & 100% Regional DSU Scholarship",
-        headline: "100% Free Tuition + €7,000 Annual Government Stipend & Schengen Mobility",
-        timeline: "Annual September/October Intake · Pre-Enrollment Guidance",
-        scholarship: "100% Full Tuition Waiver + Cash Living Support via DSU",
-        moiAccepted: "English-taught programs with MOI or basic IELTS 6.0",
+        title: "Malta (Schengen) Higher Education & Career Opportunity",
+        headline: "European Degree in an English-Speaking EU Nation with Part-Time Work Rights",
+        timeline: "Spring & Autumn Primary Intakes",
+        scholarship: "Competitive EU tuition structure with Schengen mobility access",
+        moiAccepted: "English-taught programs with MOI or IELTS options",
         partnerNote:
-          "Complete assistance with CIMEA comparability statement, Embassy pre-enrollment, and DSU scholarship dossier compilation.",
+          "Official visa filing and document verification processed via UNI Consultants Dhaka Headquarters.",
+        actionType: "abroad",
+      };
+    }
+
+    if (destination === "finland") {
+      return {
+        matchScore: 97,
+        title: "Finland Nordic Higher Education Pathway",
+        headline: "World-Class Education, 30 Hours/Week Work Rights & Post-Graduation Residence",
+        timeline: "Autumn & Spring Joint Application Rounds",
+        scholarship: "Early-bird and merit tuition discounts up to 50%",
+        moiAccepted: "IELTS 6.0–6.5 / Duolingo / English Medium Certificate",
+        partnerNote:
+          "Full RP (Residence Permit) documentation, VFS appointment support, and pre-departure briefings.",
         actionType: "abroad",
       };
     }
@@ -162,13 +190,27 @@ export function VisaPathfinder() {
     if (destination === "australia") {
       return {
         matchScore: 97,
-        title: "Australia Master's & Unrestricted Spouse Work Rights",
+        title: "Australia Master's & Post-Study Work Visa Track",
         headline: "Post-Study Work Visas up to 4+ Years & Subclass 500 Visa Processing",
         timeline: "February & July Primary Intakes",
         scholarship: "20% – 30% International Student Merit Reductions",
         moiAccepted: "IELTS 6.5+ / PTE Academic Accepted",
         partnerNote:
-          "Subclass 500 visa filing, Genuine Student (GS) formulation, and joint family file processing by senior EDU Global counselors.",
+          "Subclass 500 visa filing, Genuine Student (GS) formulation, and joint family file processing by senior UNI Consultants counselors.",
+        actionType: "abroad",
+      };
+    }
+
+    if (destination === "canada") {
+      return {
+        matchScore: 96,
+        title: "Canada DLI Colleges & Post-Graduation Work Permit (PGWP)",
+        headline: "Designated Learning Institutions with Up to 3-Year PGWP & PR Pathways",
+        timeline: "January, May & September Major Intakes",
+        scholarship: "CAD $1,000 – $5,000 Entrance Bursaries",
+        moiAccepted: "IELTS 6.0–6.5 / SDS Track Support",
+        partnerNote:
+          "Thorough SOP review, CAQ/PAL assistance, and study permit filing handled by senior counselors.",
         actionType: "abroad",
       };
     }
@@ -182,34 +224,20 @@ export function VisaPathfinder() {
         scholarship: "$3,000 – $15,000 / year Institutional Merit Awards",
         moiAccepted: "IELTS 6.5+ / Duolingo / GRE waivers available",
         partnerNote:
-          "Rigorous F-1 visa interview training and DS-160 document verification at our Dhanmondi Dhaka office.",
-        actionType: "abroad",
-      };
-    }
-
-    if (destination === "japan") {
-      return {
-        matchScore: 98,
-        title: "Japan Higher Education & Career Pathway",
-        headline: "COE Processing, High Part-Time Wages & Post-Graduation Employment",
-        timeline: "April & October Major Intakes",
-        scholarship: "JASSO Scholarships & Substantial University Waivers",
-        moiAccepted: "Basic Japanese (NAT-TEST / JLPT N5) or English Track Degrees",
-        partnerNote:
-          "Comprehensive COE documentation, Embassy interview readiness, and in-house Japanese language training at Dhanmondi HQ.",
+          "Rigorous F-1 visa interview training and DS-160 document verification at 92 Ali Bhaban HQ.",
         actionType: "abroad",
       };
     }
 
     return {
       matchScore: 99,
-      title: "EDU Global IELTS Preparation Academy (Band 7.5+)",
+      title: "UNI Consultants IELTS Preparation Academy (Band 7.5+)",
       headline: "Master Listening, Reading, Writing & Speaking with Cambridge Materials",
       timeline: "2.5 to 3 Months Intensive Coaching",
       scholarship: "Complete Cambridge Test Practice & Weekly Mock Examinations",
       moiAccepted: "British Council & IDP Aligned Certified Instruction",
       partnerNote:
-        "Taught at Keari Plaza, 4th Floor, Road 8/A, Satmasjid Road, Dhanmondi, Dhaka with 1-on-1 speaking interview simulations.",
+        "Taught at 92, Ali Bhaban (7th Floor), Kazi Nazrul Islam Avenue & Farmgate Branch with 1-on-1 speaking interview simulations.",
       actionType: "course",
     };
   };
@@ -406,7 +434,7 @@ export function VisaPathfinder() {
                 <motion.a
                   whileTap={{ scale: 0.98 }}
                   href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(
-                    `Hello EDU Global! My calculated pathway is ${match.title} with ${match.matchScore}% match. Please guide me on next admission intakes, Free Bank Support, and language training at your Dhanmondi office.`,
+                    `Hello ${company.name}! My calculated pathway is ${match.title} with ${match.matchScore}% match. Please guide me on next admission intakes, With / Without IELTS options, and consultation at your Dhaka office.`,
                   )}`}
                   target="_blank"
                   rel="noreferrer"

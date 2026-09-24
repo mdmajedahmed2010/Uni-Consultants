@@ -3,45 +3,45 @@ import { BrandLogo } from "@/components/brand-logo";
 
 const recentActivities = [
   {
-    flag: "🇬🇧",
-    student: "Tanvir A. (Dhanmondi, Dhaka)",
-    action: "Canterbury Christ Church University UK Admission Confirmed",
-    subtext: "EDU Global · 100% Admission Support",
+    flag: "🇨🇾",
+    student: "Tanvir A. (Dhaka)",
+    action: "Cyprus University Admission Confirmed (Without IELTS)",
+    subtext: "UNI Consultants · Honesty is Our Commitment",
     time: "3 mins ago",
   },
   {
-    flag: "🏦",
-    student: "Sultana R. (Dhaka)",
-    action: "Free Bank Support Approved for Cyprus / Europe Intake",
-    subtext: "EDU Global · Special Offer (First 20 Students)",
+    flag: "🇬🇧",
+    student: "Sultana R. (Farmgate, Dhaka)",
+    action: "UK Master's Admission & CAS Letter Received",
+    subtext: "UNI Consultants · 1-Yr Masters & 2-Yr PSW",
     time: "11 mins ago",
   },
   {
-    flag: "🇺🇸",
-    student: "Mahfuz H. (Dhaka)",
-    action: "USA F1 Visa Approved (8-Yr Study Gap Accepted)",
-    subtext: "EDU Global · Study Gap & Low CGPA Solutions",
+    flag: "🇲🇾",
+    student: "Mahfuz H. (Sylhet)",
+    action: "Malaysia EMGS Student Visa Approval Received",
+    subtext: "UNI Consultants · Fast Visa Processing",
     time: "24 mins ago",
   },
   {
-    flag: "🇦🇺",
-    student: "Kamrul I. (Dhaka)",
-    action: "Australia Student Visa Lodged (Without IELTS / MOI)",
-    subtext: "EDU Global · Direct University Pathway",
+    flag: "🇲🇹",
+    student: "Kamrul I. (Habiganj)",
+    action: "Malta (Schengen) Higher Education Visa Approved",
+    subtext: "UNI Consultants · European Education Wing",
     time: "42 mins ago",
   },
   {
     flag: "🗣️",
-    student: "Farzana K. (Mohammadpur, Dhaka)",
+    student: "Farzana K. (Dhaka)",
     action: "Enrolled in IELTS Academic Band 7.5+ Masterclass",
-    subtext: "EDU Global · Language Academy Wing",
+    subtext: "UNI Consultants · Language Academy Wing",
     time: "1 hour ago",
   },
   {
-    flag: "🇨🇦",
+    flag: "🇫🇮",
     student: "Ayaan M. (Dhaka)",
-    action: "Canada DLI Admission & Visa Processing Lodged",
-    subtext: "EDU Global · Dhanmondi Head Office",
+    action: "Finland Residence Permit Approved (Nordic Quality)",
+    subtext: "UNI Consultants · 92 Ali Bhaban Dhaka HQ",
     time: "2 hours ago",
   },
 ];
@@ -104,8 +104,8 @@ export function LiveActivityToast() {
 
         <div className="flex-1 min-w-0 pr-4">
           <div className="flex items-center justify-between gap-1">
-            <span className="text-[0.65rem] font-black uppercase tracking-wider text-sky-600 flex items-center gap-1">
-              <span className="w-1.5 h-1.5 rounded-full bg-sky-600 animate-pulse" />
+            <span className="text-[0.65rem] font-black uppercase tracking-wider text-orange-600 flex items-center gap-1">
+              <span className="w-1.5 h-1.5 rounded-full bg-orange-600 animate-pulse" />
               Verified Success
             </span>
             <span className="text-[0.62rem] text-slate-400 font-medium">{current.time}</span>

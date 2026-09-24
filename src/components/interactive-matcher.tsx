@@ -33,7 +33,7 @@ export function InteractiveMatcher() {
   }, [budget, ielts]);
 
   const whatsappHref = () => {
-    const text = `Hello EDU Global! I used your Pathway & Eligibility Calculator.\n\nMy Profile:\n• Desired Level: ${level}\n• Academic Result: ${score}\n• English / Language Proficiency: ${ielts}\n• Tuition Budget: ${budget}\n\nMatched Destinations: ${matchedDestinations.map((m) => m.name).join(", ")}\n\nPlease schedule a free consultation with an EDU Global counselor for me!`;
+    const text = `Hello ${company.name}! I used your Pathway & Eligibility Calculator.\n\nMy Profile:\n• Desired Level: ${level}\n• Academic Result: ${score}\n• English / Language Proficiency: ${ielts}\n• Tuition Budget: ${budget}\n\nMatched Destinations: ${matchedDestinations.map((m) => m.name).join(", ")}\n\nPlease schedule a free consultation with a ${company.name} counselor for me!`;
     return `https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(text)}`;
   };
 
@@ -41,16 +41,16 @@ export function InteractiveMatcher() {
     <div className="card-clean p-6 sm:p-10 border border-slate-200/90 shadow-md bg-white rounded-3xl">
       <div className="flex flex-wrap items-center justify-between gap-4 border-b border-slate-100 pb-6">
         <div>
-          <div className="inline-flex items-center gap-2 rounded-full border border-sky-200 bg-sky-50 px-3.5 py-1 text-xs font-bold text-sky-700">
-            <IconSparkles className="w-3.5 h-3.5 text-sky-600" />
+          <div className="inline-flex items-center gap-2 rounded-full border border-orange-200 bg-orange-50 px-3.5 py-1 text-xs font-bold text-uni-orange">
+            <IconSparkles className="w-3.5 h-3.5 text-uni-orange" />
             <span>Interactive Tool · 100% Free Profile Assessment</span>
           </div>
           <h2 className="mt-3 font-display text-2xl sm:text-3xl font-extrabold text-slate-900">
-            Study Abroad & IELTS <span className="text-sky-600">Eligibility Calculator</span>
+            Study Abroad & Language <span className="text-uni-orange">Eligibility Calculator</span>
           </h2>
           <p className="mt-1 max-w-2xl text-xs sm:text-sm text-slate-600 leading-relaxed">
             Select your academic degree level, GPA, English status, and
-            budget to discover matched pathways across UK, USA, Australia, Hungary, Canada, Finland, Denmark, Malaysia, and Dubai.
+            budget to discover matched pathways across Cyprus, UK, Malaysia, Malta, Australia, Canada, USA, and Europe.
           </p>
         </div>
         <div className="rounded-2xl border border-slate-800 bg-slate-950 px-4 py-2 text-xs font-bold text-white">
@@ -221,14 +221,14 @@ export function InteractiveMatcher() {
         <div className="mt-6 flex flex-wrap items-center justify-between gap-4 rounded-3xl bg-slate-950 border border-slate-800 p-5 sm:p-6 text-white shadow-lg">
           <div>
             <p className="font-display text-sm sm:text-base font-bold text-white">
-              Want a Free Profile & Study Abroad Assessment by EDU Global Advisors?
+              Want a Free Profile & Study Abroad Assessment by {company.name} Advisors?
             </p>
             <p className="text-xs text-slate-300 mt-0.5">
-              Visit our Head Office at Keari Plaza, 4th Floor, Road 8/A, Satmasjid Road, Dhanmondi, Dhaka, or connect with our counselors directly on WhatsApp.
+              Visit our Principal Head Office at {company.address.full}, or connect with our counselors directly on WhatsApp.
             </p>
           </div>
           <div className="flex items-center gap-3">
-            <button type="button" onClick={open} className="btn-luxury-primary text-xs py-2.5 px-5">
+            <button type="button" onClick={open} className="btn-primary text-xs py-2.5 px-5">
               Book Free Session
             </button>
             <a
@@ -237,7 +237,7 @@ export function InteractiveMatcher() {
               rel="noreferrer"
               className="btn-luxury-secondary text-xs py-2.5 px-5"
             >
-              <IconWhatsApp className="w-3.5 h-3.5 text-emerald-600" />
+              <IconWhatsApp className="w-3.5 h-3.5 text-emerald-500" />
               <span>Send on WhatsApp</span>
             </a>
           </div>

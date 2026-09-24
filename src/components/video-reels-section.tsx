@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 export function VideoReelsSection({
   title = "Official Facebook Video Reels & Visa Success Stories",
-  subtitle = "Watch real student visa celebrations, Europe bank support briefings, and global admission masterclasses directly from EDU Global Dhanmondi, Dhaka.",
+  subtitle = "Watch real student visa celebrations, international admission briefings, and study abroad masterclasses directly from UNI Consultants Dhaka Principal Office.",
 }: {
   title?: string;
   subtitle?: string;
@@ -30,27 +30,27 @@ export function VideoReelsSection({
     <section className="section-shell py-12 sm:py-16">
       {/* Section Header */}
       <div className="text-center max-w-3xl mx-auto mb-6 sm:mb-8">
-        <div className="inline-flex items-center gap-2 rounded-full bg-blue-50 border border-blue-200/90 px-4 py-1.5 text-xs font-bold text-[#0047ba] mb-3 shadow-2xs">
-          <IconSparkles className="w-3.5 h-3.5 text-blue-600" />
-          <span>VERIFIED SOCIAL PROOF · DHANMONDI HQ</span>
+        <div className="inline-flex items-center gap-2 rounded-full bg-orange-50 border border-orange-200/90 px-4 py-1.5 text-xs font-bold text-[#f37021] mb-3 shadow-2xs">
+          <IconSparkles className="w-3.5 h-3.5 text-[#f37021]" />
+          <span>VERIFIED SOCIAL PROOF · DHAKA PRINCIPAL OFFICE</span>
         </div>
-        <h2 className="font-display text-2xl sm:text-4xl font-black text-[#0a1931] tracking-tight">
+        <h2 className="font-display text-2xl sm:text-4xl font-black text-[#0f172a] tracking-tight">
           {title}
         </h2>
         <p className="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed font-medium">
           {subtitle}
         </p>
-        <p className="text-xs text-slate-400 font-bangla mt-1">
-          ইউরোপ ও ইউকে ভিসা সাফল্য, ফ্রি ব্যাংক সাপোর্ট সুবিধা ও IELTS প্রস্তুতির বাস্তব অভিজ্ঞতা দেখুন।
+        <p className="text-xs text-slate-500 font-bangla mt-1">
+          সাইপ্রাস, ইউকে, মালয়েশিয়া ও মাল্টা ভিসা সাফল্য এবং সরাসরি অভিজ্ঞ কাউন্সেলরদের বাস্তব দিকনির্দেশনা দেখুন।
         </p>
 
         {/* Filter Chips */}
         <div className="flex items-center justify-center gap-2 mt-5 flex-wrap">
           <button
             onClick={() => setActiveFilter("all")}
-            className={`px-3.5 py-1.5 rounded-full text-xs font-bold transition-all cursor-pointer ${
+            className={`px-4 py-1.5 rounded-full text-xs font-bold transition-all cursor-pointer ${
               activeFilter === "all"
-                ? "bg-[#0047ba] text-white shadow-sm"
+                ? "bg-[#f37021] text-white shadow-sm"
                 : "bg-slate-100 text-slate-600 hover:bg-slate-200"
             }`}
           >
@@ -58,9 +58,9 @@ export function VideoReelsSection({
           </button>
           <button
             onClick={() => setActiveFilter("reel")}
-            className={`px-3.5 py-1.5 rounded-full text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer ${
+            className={`px-4 py-1.5 rounded-full text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer ${
               activeFilter === "reel"
-                ? "bg-[#0047ba] text-white shadow-sm"
+                ? "bg-[#f37021] text-white shadow-sm"
                 : "bg-slate-100 text-slate-600 hover:bg-slate-200"
             }`}
           >
@@ -69,9 +69,9 @@ export function VideoReelsSection({
           </button>
           <button
             onClick={() => setActiveFilter("masterclass")}
-            className={`px-3.5 py-1.5 rounded-full text-xs font-bold transition-all cursor-pointer ${
+            className={`px-4 py-1.5 rounded-full text-xs font-bold transition-all cursor-pointer ${
               activeFilter === "masterclass"
-                ? "bg-[#0047ba] text-white shadow-sm"
+                ? "bg-[#f37021] text-white shadow-sm"
                 : "bg-slate-100 text-slate-600 hover:bg-slate-200"
             }`}
           >
@@ -86,16 +86,15 @@ export function VideoReelsSection({
           {/* Desktop Layout (1024px+): 
               Left 4 cols = Vertical Reel in sleek phone mockup.
               Right 8 cols = 2 Widescreen Masterclasses side-by-side with 100% full-bleed 16:9 video.
-              Zero letterboxing, zero black bars, balanced heights.
           */}
           <div className="hidden lg:grid lg:grid-cols-12 gap-6 items-stretch">
             {/* Left Column (4 cols): The Vertical 9:16 Facebook Reel */}
             {portraitReel && (
               <div className="lg:col-span-4 flex flex-col h-full">
                 <SlideIn direction="up" delay={0.1} className="flex flex-col h-full">
-                  <div className="rounded-3xl overflow-hidden border border-slate-200/90 shadow-md bg-white flex flex-col justify-between h-full group hover:border-[#0047ba] hover:shadow-[0_16px_40px_rgba(0,71,186,0.12)] transition-all duration-300">
+                  <div className="rounded-3xl overflow-hidden border border-slate-200/90 shadow-md bg-white flex flex-col justify-between h-full group hover:border-[#f37021] hover:shadow-[0_16px_40px_rgba(243,112,33,0.12)] transition-all duration-300">
                     {/* Header Badge */}
-                    <div className="p-4 pb-3 border-b border-slate-100 flex items-center justify-between gap-2 bg-gradient-to-r from-rose-50/70 to-blue-50/70">
+                    <div className="p-4 pb-3 border-b border-slate-100 flex items-center justify-between gap-2 bg-gradient-to-r from-orange-50/70 to-slate-50">
                       <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full text-[0.72rem] font-black bg-amber-100 text-amber-900 border border-amber-300/80 shadow-2xs">
                         {portraitReel.badge}
                       </span>
@@ -105,7 +104,7 @@ export function VideoReelsSection({
                       </span>
                     </div>
 
-                    {/* Smartphone Mockup Frame: 9:16 video fills exactly with zero void */}
+                    {/* Smartphone Mockup Frame: 9:16 video */}
                     <div className="p-4 flex items-center justify-center bg-slate-900">
                       <div className="w-full max-w-[230px] aspect-[9/16] rounded-2xl overflow-hidden shadow-2xl border border-slate-700/80 bg-black">
                         <iframe
@@ -126,7 +125,7 @@ export function VideoReelsSection({
                     {/* Content & Actions */}
                     <div className="p-5 flex flex-col justify-between flex-1 gap-3 bg-white">
                       <div className="space-y-1.5">
-                        <h3 className="font-display text-base font-extrabold text-[#0a1931] group-hover:text-[#0047ba] transition-colors leading-snug">
+                        <h3 className="font-display text-base font-extrabold text-[#0f172a] group-hover:text-[#f37021] transition-colors leading-snug">
                           {portraitReel.title}
                         </h3>
                         <p className="text-xs text-slate-700 leading-relaxed font-medium line-clamp-2">
@@ -145,7 +144,7 @@ export function VideoReelsSection({
                           href={portraitReel.videoUrl}
                           target="_blank"
                           rel="noreferrer"
-                          className="inline-flex items-center gap-1.5 text-xs font-bold text-blue-600 hover:text-blue-800 transition-colors"
+                          className="inline-flex items-center gap-1.5 text-xs font-bold text-[#f37021] hover:text-[#ea580c] transition-colors"
                         >
                           <span>Watch on Facebook</span>
                           <span className="text-[0.7rem]">↗</span>
@@ -154,7 +153,7 @@ export function VideoReelsSection({
                         <motion.a
                           whileTap={{ scale: 0.96 }}
                           href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(
-                            `Hello EDU Global! I watched your video reel "${portraitReel.title}" on Facebook and would like details about Free Bank Support & Europe Admissions.`,
+                            `Hello UNI Consultants! I watched your video reel "${portraitReel.title}" on Facebook and would like details about university admissions and visa guidance.`,
                           )}`}
                           target="_blank"
                           rel="noreferrer"
@@ -179,10 +178,10 @@ export function VideoReelsSection({
                   delay={0.15 * (idx + 1)}
                   className="flex flex-col h-full"
                 >
-                  <div className="rounded-3xl overflow-hidden border border-slate-200/90 shadow-md bg-white flex flex-col justify-between h-full group hover:border-[#0047ba] hover:shadow-[0_16px_40px_rgba(0,71,186,0.12)] transition-all duration-300">
+                  <div className="rounded-3xl overflow-hidden border border-slate-200/90 shadow-md bg-white flex flex-col justify-between h-full group hover:border-[#f37021] hover:shadow-[0_16px_40px_rgba(243,112,33,0.12)] transition-all duration-300">
                     {/* Header Badge */}
                     <div className="p-4 pb-3 border-b border-slate-100 flex items-center justify-between gap-2 bg-slate-50/90">
-                      <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[0.68rem] font-black bg-blue-50 text-blue-900 border border-blue-200">
+                      <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[0.68rem] font-black bg-orange-50 text-[#ea580c] border border-orange-200">
                         {reel.badge}
                       </span>
                       <span className="text-[0.65rem] font-bold text-slate-500 uppercase tracking-wider bg-white px-2 py-0.5 rounded border border-slate-200">
@@ -190,7 +189,7 @@ export function VideoReelsSection({
                       </span>
                     </div>
 
-                    {/* 16:9 Video Player - Spans full width of card with ZERO letterboxing */}
+                    {/* 16:9 Video Player */}
                     <div className="w-full aspect-video bg-black overflow-hidden">
                       <iframe
                         src={reel.embedSrc}
@@ -209,7 +208,7 @@ export function VideoReelsSection({
                     {/* Content below the video */}
                     <div className="p-5 flex flex-col justify-between flex-1 gap-3 bg-white">
                       <div className="space-y-1.5">
-                        <h3 className="font-display text-sm sm:text-base font-extrabold text-[#0a1931] group-hover:text-[#0047ba] transition-colors line-clamp-2 leading-snug">
+                        <h3 className="font-display text-sm sm:text-base font-extrabold text-[#0f172a] group-hover:text-[#f37021] transition-colors line-clamp-2 leading-snug">
                           {reel.title}
                         </h3>
                         <p className="text-xs text-slate-700 leading-relaxed line-clamp-2 font-medium">
@@ -228,7 +227,7 @@ export function VideoReelsSection({
                           href={reel.videoUrl}
                           target="_blank"
                           rel="noreferrer"
-                          className="inline-flex items-center gap-1.5 text-xs font-bold text-blue-600 hover:text-blue-800 transition-colors"
+                          className="inline-flex items-center gap-1.5 text-xs font-bold text-[#f37021] hover:text-[#ea580c] transition-colors"
                         >
                           <span>Watch on Facebook</span>
                           <span className="text-[0.7rem]">↗</span>
@@ -237,7 +236,7 @@ export function VideoReelsSection({
                         <motion.a
                           whileTap={{ scale: 0.96 }}
                           href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(
-                            `Hello EDU Global! I watched your video "${reel.title}" and would like admission guidance.`,
+                            `Hello UNI Consultants! I watched your video "${reel.title}" and would like admission guidance.`,
                           )}`}
                           target="_blank"
                           rel="noreferrer"
@@ -254,26 +253,26 @@ export function VideoReelsSection({
             </div>
           </div>
 
-          {/* Mobile & Tablet View (< 1024px): Stacked cards respecting native aspect ratios */}
+          {/* Mobile & Tablet View (< 1024px): Stacked cards */}
           <div className="lg:hidden flex flex-col gap-6">
             {reels.map((reel, idx) => {
               const isPortrait = reel.orientation === "portrait";
 
               return (
                 <SlideIn key={reel.id} direction="up" delay={idx * 0.1}>
-                  <div className="rounded-3xl overflow-hidden border border-slate-200/90 shadow-md bg-white flex flex-col group hover:border-[#0047ba] transition-all">
+                  <div className="rounded-3xl overflow-hidden border border-slate-200/90 shadow-md bg-white flex flex-col group hover:border-[#f37021] transition-all">
                     {/* Header Badge */}
                     <div className="p-4 pb-3 border-b border-slate-100 flex items-center justify-between gap-2 bg-slate-50/90">
                       <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full text-[0.72rem] font-black bg-amber-50 text-amber-900 border border-amber-200">
                         {reel.badge}
                       </span>
-                      <span className="text-[0.65rem] font-black text-[#0047ba] uppercase tracking-wider bg-white px-2.5 py-0.5 rounded-full border border-blue-100 shadow-2xs flex items-center gap-1.5">
-                        <span className={`w-2 h-2 rounded-full ${isPortrait ? "bg-rose-500 animate-pulse" : "bg-blue-500"}`} />
+                      <span className="text-[0.65rem] font-black text-[#f37021] uppercase tracking-wider bg-white px-2.5 py-0.5 rounded-full border border-orange-100 shadow-2xs flex items-center gap-1.5">
+                        <span className={`w-2 h-2 rounded-full ${isPortrait ? "bg-rose-500 animate-pulse" : "bg-[#f37021]"}`} />
                         <span>{isPortrait ? "Vertical Reel (9:16)" : "Masterclass (16:9)"}</span>
                       </span>
                     </div>
 
-                    {/* Sized container matching orientation: aspect-[9/16] centered for portrait, full aspect-video for landscape */}
+                    {/* Sized container */}
                     <div className="bg-slate-950 flex items-center justify-center p-2 sm:p-3 overflow-hidden">
                       <div
                         className={
@@ -300,7 +299,7 @@ export function VideoReelsSection({
                     {/* Content */}
                     <div className="p-5 flex flex-col gap-3 bg-white">
                       <div className="space-y-1.5">
-                        <h3 className="font-display text-base font-extrabold text-[#0a1931] leading-snug">
+                        <h3 className="font-display text-base font-extrabold text-[#0f172a] leading-snug">
                           {reel.title}
                         </h3>
                         <p className="text-xs text-slate-700 leading-relaxed font-medium">
@@ -319,7 +318,7 @@ export function VideoReelsSection({
                           href={reel.videoUrl}
                           target="_blank"
                           rel="noreferrer"
-                          className="inline-flex items-center gap-1.5 text-xs font-bold text-blue-600 hover:text-blue-800"
+                          className="inline-flex items-center gap-1.5 text-xs font-bold text-[#f37021] hover:text-[#ea580c]"
                         >
                           <span>Watch on Facebook</span>
                           <span className="text-[0.7rem]">↗</span>
@@ -328,7 +327,7 @@ export function VideoReelsSection({
                         <motion.a
                           whileTap={{ scale: 0.96 }}
                           href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(
-                            `Hello EDU Global! I watched your video reel "${reel.title}" on Facebook and would like more details.`,
+                            `Hello UNI Consultants! I watched your video reel "${reel.title}" on Facebook and would like more details.`,
                           )}`}
                           target="_blank"
                           rel="noreferrer"
@@ -346,7 +345,7 @@ export function VideoReelsSection({
           </div>
         </div>
       ) : (
-        /* Filtered Grid View when user taps "Vertical Reel" or "Widescreen Masterclasses" */
+        /* Filtered Grid View */
         <div
           className={`grid gap-6 ${
             filteredReels.length === 1
@@ -364,13 +363,13 @@ export function VideoReelsSection({
                   initial={{ opacity: 0, scale: 0.96 }}
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0, scale: 0.96 }}
-                  className="rounded-3xl overflow-hidden border border-slate-200/90 shadow-md bg-white flex flex-col group hover:border-[#0047ba] hover:shadow-[0_16px_40px_rgba(0,71,186,0.12)] transition-all duration-300"
+                  className="rounded-3xl overflow-hidden border border-slate-200/90 shadow-md bg-white flex flex-col group hover:border-[#f37021] hover:shadow-[0_16px_40px_rgba(243,112,33,0.12)] transition-all duration-300"
                 >
                   <div className="p-4 pb-3 border-b border-slate-100 flex items-center justify-between gap-2 bg-slate-50/90">
                     <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full text-[0.72rem] font-black bg-amber-50 text-amber-900 border border-amber-200">
                       {reel.badge}
                     </span>
-                    <span className="text-[0.65rem] font-black text-[#0047ba] uppercase tracking-wider bg-white px-2.5 py-0.5 rounded-full border border-blue-100 shadow-2xs">
+                    <span className="text-[0.65rem] font-black text-[#f37021] uppercase tracking-wider bg-white px-2.5 py-0.5 rounded-full border border-orange-100 shadow-2xs">
                       {isPortrait ? "Vertical Reel (9:16)" : "Masterclass (16:9)"}
                     </span>
                   </div>
@@ -400,7 +399,7 @@ export function VideoReelsSection({
 
                   <div className="p-5 flex flex-col justify-between flex-1 gap-3 bg-white">
                     <div className="space-y-1.5">
-                      <h3 className="font-display text-base font-extrabold text-[#0a1931] group-hover:text-[#0047ba] transition-colors leading-snug">
+                      <h3 className="font-display text-base font-extrabold text-[#0f172a] group-hover:text-[#f37021] transition-colors leading-snug">
                         {reel.title}
                       </h3>
                       <p className="text-xs text-slate-700 leading-relaxed font-medium">
@@ -419,7 +418,7 @@ export function VideoReelsSection({
                         href={reel.videoUrl}
                         target="_blank"
                         rel="noreferrer"
-                        className="inline-flex items-center gap-1.5 text-xs font-bold text-blue-600 hover:text-blue-800"
+                        className="inline-flex items-center gap-1.5 text-xs font-bold text-[#f37021] hover:text-[#ea580c]"
                       >
                         <span>Watch on Facebook</span>
                         <span className="text-[0.7rem]">↗</span>
@@ -428,7 +427,7 @@ export function VideoReelsSection({
                       <motion.a
                         whileTap={{ scale: 0.96 }}
                         href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(
-                          `Hello EDU Global! I watched your video "${reel.title}" on Facebook and would like details.`,
+                          `Hello UNI Consultants! I watched your video "${reel.title}" on Facebook and would like details.`,
                         )}`}
                         target="_blank"
                         rel="noreferrer"

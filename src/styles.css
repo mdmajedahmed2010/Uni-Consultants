@@ -9,17 +9,28 @@
   --font-serif: "Playfair Display", Georgia, serif;
   --font-bangla: "Hind Siliguri", "Plus Jakarta Sans", sans-serif;
 
-  /* EDU GLOBAL Official Brand Palette (Emerald #059669, Deep Forest #0C1F17 & Modern Accents) */
-  --color-hsc-navy: #161b38;
-  --color-hsc-navy-dark: #0f142e;
-  --color-hsc-navy-midnight: #090c1f;
-  --color-hsc-navy-light: #242c56;
-  --color-hsc-navy-soft: #f0f3fa;
+  /* UNI CONSULTANTS Official Brand Palette (Signature Orange #F37021, Deep Navy #0F172A & Slate) */
+  --color-uni-orange: #f37021;
+  --color-uni-orange-dark: #ea580c;
+  --color-uni-orange-deep: #c2410c;
+  --color-uni-orange-light: #fb923c;
+  --color-uni-orange-soft: #fff7ed;
 
-  --color-hsc-gold: #f5a623;
-  --color-hsc-gold-bright: #fbbf24;
-  --color-hsc-gold-dark: #d98205;
-  --color-hsc-gold-soft: #fef8ec;
+  --color-uni-navy: #0f172a;
+  --color-uni-navy-dark: #020617;
+  --color-uni-navy-light: #1e293b;
+  --color-uni-navy-soft: #f8fafc;
+
+  --color-hsc-navy: #0f172a;
+  --color-hsc-navy-dark: #020617;
+  --color-hsc-navy-midnight: #090c1f;
+  --color-hsc-navy-light: #1e293b;
+  --color-hsc-navy-soft: #f8fafc;
+
+  --color-hsc-gold: #f37021;
+  --color-hsc-gold-bright: #fb923c;
+  --color-hsc-gold-dark: #ea580c;
+  --color-hsc-gold-soft: #fff7ed;
 
   --color-hsc-blue: #0ea5e9;
   --color-hsc-blue-light: #38bdf8;
@@ -293,17 +304,17 @@ body {
   transform: translate3d(0, -4px, 0);
 }
 
-/* Primary Nexus Global Ocean Blue & Sunrise Orange Buttons */
+/* Primary UNI Consultants Signature Orange Buttons */
 .btn-luxury-primary,
 .btn-primary {
-  background: linear-gradient(135deg, #0284c7 0%, #0369a1 60%, #1e3a8a 100%);
+  background: linear-gradient(135deg, #f37021 0%, #ea580c 60%, #c2410c 100%);
   color: #ffffff;
   font-weight: 800;
   font-size: 0.875rem;
   border-radius: 9999px;
   padding: 0.875rem 2rem;
   transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
-  box-shadow: 0 4px 20px -2px rgba(2, 132, 199, 0.45);
+  box-shadow: 0 4px 20px -2px rgba(243, 112, 33, 0.45);
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -315,8 +326,8 @@ body {
 
 .btn-luxury-primary:hover,
 .btn-primary:hover {
-  background: linear-gradient(135deg, #38bdf8 0%, #0284c7 60%, #0369a1 100%);
-  box-shadow: 0 8px 30px -3px rgba(2, 132, 199, 0.65);
+  background: linear-gradient(135deg, #fb923c 0%, #f37021 60%, #ea580c 100%);
+  box-shadow: 0 8px 30px -3px rgba(243, 112, 33, 0.65);
   transform: translate3d(0, -2px, 0);
 }
 

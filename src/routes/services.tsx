@@ -17,18 +17,18 @@ export const Route = createFileRoute("/services")({
   head: () => ({
     meta: [
       {
-        title: "Services & Academy | EDU Global — Study Abroad, IELTS, Spoken English & Kids English",
+        title: `Services & Language Academy | ${company.name} — Study Abroad, IELTS & Spoken English`,
       },
       {
         name: "description",
         content:
-          "Explore EDU Global services: 100% Admission Guidance (UK, USA, Canada, Australia, Europe, New Zealand, South Korea, Japan, Finland, Ireland, Cyprus), Free Bank Support Offer for first 20 students, Study Gap & Low CGPA accepted, IELTS Prep, Spoken English, Kids English & Japanese Courses. Dhanmondi, Dhaka.",
+          `Explore ${company.name} services: Study Abroad Admissions (Cyprus, UK, Malaysia, Malta, Finland, Australia, Canada), With / Without IELTS Options, Tuition from €2,500/yr in Cyprus, IELTS Prep (7.5+), Spoken English Fluency & Kids English Academy. Dhaka HQ: 92, Ali Bhaban (7th Fl), Kazi Nazrul Islam Ave.`,
       },
-      { property: "og:title", content: "Services & Language Academy | EDU Global" },
+      { property: "og:title", content: `Services & Language Academy | ${company.name}` },
       {
         property: "og:description",
         content:
-          "Official services of EDU Global (ইডিইউ গ্লোবাল). Global admissions, Free Bank Support for European visas, Study Gap & Low CGPA solutions, and comprehensive language training.",
+          `Official services of ${company.name}. One Stop Solution for Study Abroad Education. Flagship admissions in Cyprus, UK, Malaysia, Malta, and premier Language Academy.`,
       },
     ],
   }),
@@ -38,70 +38,70 @@ export const Route = createFileRoute("/services")({
 const serviceCategories = [
   { id: "all", label: "All Services" },
   { id: "study-abroad", label: "Study Abroad Admissions" },
-  { id: "language-academy", label: "Language Academy (IELTS & English)" },
-  { id: "bank-support", label: "Free Bank Support" },
-  { id: "study-gap", label: "Study Gap & Low CGPA" },
+  { id: "language-academy", label: "UNI Language Academy" },
+  { id: "without-ielts", label: "With / Without IELTS" },
+  { id: "visa-audit", label: "Visa File Audit & Support" },
 ];
 
 const comparisonData = [
   {
-    feature: "Admission & University Processing",
-    edugbl: "100% Admission Guidance with Direct University Partnerships (e.g. Canterbury Christ Church UK)",
-    traditional: "Random unaccredited university choices with uncertain outcome",
+    feature: "Core Brand Philosophy",
+    uniConsultants: "HONESTY IS OUR COMMITMENT — 100% transparent counseling & fees",
+    traditional: "Hidden charges, exaggerated promises, and uncertain outcomes",
     highlight: true,
   },
   {
-    feature: "Financial & Bank Solvency Support",
-    edugbl: "Free Bank Support Offer for first 20 students (Cyprus & Europe intakes)",
-    traditional: "Expensive, unverified third-party paper vendors risking visa bans",
+    feature: "Flagship Study Destinations",
+    uniConsultants: "Cyprus (Tuition from €2,500/yr), UK (1-Yr Masters), Malaysia, Malta & Finland",
+    traditional: "Random, unvetted colleges with high rejection rates",
     highlight: true,
   },
   {
-    feature: "Study Gap & Low CGPA Solutions",
-    edugbl: "Profiles with long study gaps (up to 10+ years) and CGPA down to 2.5 accepted",
-    traditional: "Immediate rejection of profiles with educational gaps or low marks",
+    feature: "With / Without IELTS Pathways",
+    uniConsultants: "Legitimate Medium of Instruction (MOI), internal tests, and Without IELTS options",
+    traditional: "Forces students into repeated exam cycles without viable alternative paths",
     highlight: true,
   },
   {
-    feature: "Study Abroad Without IELTS",
-    edugbl: "Options via Medium of Instruction (MOI), Duolingo, and internal university English tests",
-    traditional: "Forces expensive retakes without alternative admission pathways",
+    feature: "In-House Language Academy",
+    uniConsultants: "IELTS Academic & General (7.5+), Spoken English & Interview, Kids Academy (6–14)",
+    traditional: "No in-house academy or completely outsourced without accountability",
     highlight: true,
   },
   {
-    feature: "Comprehensive Language Academy",
-    edugbl: "IELTS 7.5+, Spoken English Fluency, Kids English & Phonics (ages 5–14), and Japanese (JLPT)",
-    traditional: "Basic or no in-house language academy, outsourced without quality control",
+    feature: "Physical Branch Network",
+    uniConsultants: "4 Verified Offices: Dhaka Principal HQ, Farmgate, Habiganj & London UK",
+    traditional: "Single unregistered room or virtual-only operations",
     highlight: true,
   },
   {
-    feature: "Accessible Central Location",
-    edugbl: "Prime Dhanmondi Satmasjid Road (Keari Plaza, 4th Floor, Lift-3, Opp. Unimart)",
-    traditional: "Hard-to-reach or hidden locations without proper counseling infrastructure",
+    feature: "Embassy Visa File Preparation",
+    uniConsultants: "Transparent file auditing, genuine financial advice & 1-on-1 embassy mock drills",
+    traditional: "Unverified paper vendors risking long-term embassy visa bans",
     highlight: true,
   },
 ];
 
 const serviceFaqs = [
   {
-    q: "What is EDU Global's Free Bank Support offer?",
-    a: "EDU Global offers Free Bank Support to the first 20 students applying for Cyprus and European Union partner university intakes. This helps students fulfill strict embassy financial solvency requirements legally and smoothly.",
+    q: "Why is Cyprus considered a flagship destination at UNI Consultants?",
+    a: "Cyprus offers high visa success rates, affordable annual tuition starting from only €2,500/year, Without IELTS admission options via MOI, and official legal student part-time work rights in Europe.",
   },
   {
-    q: "Can I study abroad with a study gap or a CGPA around 2.5?",
-    a: "Yes! EDU Global specializes in study gap solutions (up to 10+ years) and accepts CGPA down to 2.5. We evaluate your professional experience, build a robust SOP, and map you to universities in the UK, Europe, Cyprus, and Malaysia with accommodating policies.",
+    q: "Can I apply for higher studies abroad without IELTS?",
+    a: "Yes! At UNI Consultants, we provide authentic pathways to study in Cyprus, Malaysia, Malta, and select UK/European institutions without IELTS using a Medium of Instruction (MOI) certificate from your previous university or college.",
   },
   {
-    q: "Is it possible to study abroad without an IELTS score?",
-    a: "Yes. Many of our partner universities across the UK, Europe, Cyprus, and Malaysia accept Medium of Instruction (MOI) certificates from your previous degree, Duolingo English Test (DET), or internal university language assessments.",
+    q: "What programs are taught at the UNI Language Academy?",
+    a: "Our academy delivers intensive IELTS Preparation (Academic & General aiming for Band 7.5+), Spoken English Fluency & Embassy Visa Interview Coaching, and our specialized Kids English Academy for ages 6 to 14.",
   },
   {
-    q: "What courses are offered at the EDU Global Language Academy?",
-    a: "We offer comprehensive IELTS Preparation (Academic & General targeting Band 7.5+), Spoken English Fluency courses for career & visa interviews, Kids English & Phonics Academy (ages 5–14), and Japanese Language Courses (JLPT N5/N4).",
+    q: "What is UNI Consultants' policy regarding study gaps or low CGPA?",
+    a: "We welcome students with study gaps and CGPA from 2.5+. By highlighting your authentic work experience, portfolio, and career objectives, we match you to accommodating universities across Cyprus, UK, Malaysia, and Europe.",
   },
   {
-    q: "Where is EDU Global located and how do I schedule an assessment?",
-    a: "Our central office is at Keari Plaza, Plot No- 83, 4th Floor (Lift-3), Road No- 8/A, Satmasjid Road, Dhanmondi R/A, Dhaka - 1209 (Opposite Unimart, Old 15 Bus Stand). You can visit in person or call our hotlines: +880 1901-402990 or +880 1901-402992.",
+    q: "Where can I visit UNI Consultants in person?",
+    a: "Our Principal Head Office is located at 92, Ali Bhaban (7th Floor), Kazi Nazrul Islam Avenue, Dhaka 1215. We also welcome students at our Farmgate branch (RH Home Centre), Habiganj branch (Townhall Road), and UK liaison office in London.",
   },
 ];
 
@@ -115,10 +115,10 @@ function Services() {
       {/* 1. High-Impact Page Hero with Breadcrumbs */}
       <PageHero
         eyebrow="Foreign Education Advisory & Language Academy"
-        title="GLOBAL ADMISSIONS & LANGUAGE ACADEMY"
-        subtitle="EDU Global (ইডিইউ গ্লোবাল) offers comprehensive study abroad processing for 10+ countries, Free Bank Support for early applicants, Study Gap & Low CGPA acceptance, and premier IELTS, Spoken English & Kids English programs."
+        title="ONE STOP SOLUTION FOR STUDY ABROAD EDUCATION"
+        subtitle="UNI Consultants (ইউআই কনসালট্যান্টস) provides verified university admissions across Cyprus, UK, Malaysia, Malta, Finland, Australia, and Canada, alongside our premier IELTS, Spoken English & Kids Language Academy."
         image="/banner.png"
-        imageAlt="EDU Global official banner"
+        imageAlt="UNI Consultants official banner"
       >
         <div className="space-y-6">
           <Breadcrumbs items={[{ label: "Home", to: "/" }, { label: "Services" }]} />
@@ -126,14 +126,14 @@ function Services() {
             <button
               type="button"
               onClick={open}
-              className="btn-luxury-primary text-xs sm:text-sm py-3.5 px-8 shadow-xl hover:shadow-emerald-500/30 cursor-pointer font-bold bg-emerald-500 hover:bg-emerald-400 text-slate-950"
+              className="btn-primary text-xs sm:text-sm py-3.5 px-8 shadow-xl cursor-pointer font-bold"
             >
               <span>Book Free Profile Assessment</span>
-              <IconSparkles className="w-4 h-4" />
+              <IconSparkles className="w-4 h-4 text-white" />
             </button>
             <a
               href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(
-                "Hello EDU Global! I would like to inquire about study abroad admissions, language training, and free bank support.",
+                `Hello ${company.name}! I would like to inquire about study abroad admissions, language academy training, and visa guidance.`,
               )}`}
               target="_blank"
               rel="noreferrer"
@@ -158,7 +158,7 @@ function Services() {
                 className={cn(
                   "rounded-full px-4 py-2 text-xs font-bold transition-all cursor-pointer",
                   activeCategory === cat.id
-                    ? "bg-[#0b1f17] text-emerald-400 shadow-md border border-emerald-500/40"
+                    ? "bg-[#0f172a] text-orange-400 shadow-md border border-orange-500/40"
                     : "bg-slate-100 text-slate-700 hover:bg-slate-200",
                 )}
               >
@@ -172,19 +172,19 @@ function Services() {
       {/* 3. Core Study Abroad & Advisory Services Grid */}
       {(activeCategory === "all" ||
         activeCategory === "study-abroad" ||
-        activeCategory === "bank-support" ||
-        activeCategory === "study-gap") && (
+        activeCategory === "without-ielts" ||
+        activeCategory === "visa-audit") && (
         <section className="section-shell py-16">
           <div className="text-center max-w-3xl mx-auto mb-12">
-            <div className="inline-flex items-center gap-2 rounded-full bg-emerald-50 border border-emerald-200 px-3.5 py-1 text-xs font-bold text-emerald-800 mb-3">
-              <IconSparkles className="w-3.5 h-3.5 text-emerald-600" />
-              <span>Full Lifecycle Global Advisory</span>
+            <div className="inline-flex items-center gap-2 rounded-full bg-orange-50 border border-orange-200 px-3.5 py-1 text-xs font-bold text-orange-800 mb-3">
+              <IconSparkles className="w-3.5 h-3.5 text-orange-600" />
+              <span>Honesty is Our Commitment</span>
             </div>
             <h2 className="font-display text-2xl sm:text-4xl font-black text-slate-900 tracking-tight">
-              Comprehensive Foreign Education <span className="text-emerald-600">& Visa Services</span>
+              Comprehensive Study Abroad <span className="text-orange-600">& Visa Services</span>
             </h2>
-            <p className="text-xs sm:text-sm text-slate-600 mt-2">
-              From free profile assessment at our Dhanmondi Head Office to direct university admissions, visa file processing, and embassy interview coaching.
+            <p className="text-xs sm:text-sm text-slate-600 mt-2 font-bangla">
+              আমাদের ৯২ আলী ভবন ঢাকা হেড অফিস এবং শাখা অফিসগুলোতে সরাসরি এসে অভিজ্ঞ সিনিয়র কাউন্সেলরদের সাথে বসুন। শতভাগ স্বচ্ছ ভর্তি ও ভিসা গাইডলাইন।
             </p>
           </div>
 
@@ -192,13 +192,13 @@ function Services() {
             {services.map((service) => (
               <div
                 key={service.id}
-                className="rounded-3xl border border-slate-200 bg-white p-7 shadow-sm flex flex-col justify-between hover:border-emerald-500/40 hover:shadow-lg transition-all"
+                className="rounded-3xl border border-slate-200 bg-white p-7 shadow-sm flex flex-col justify-between hover:border-orange-500/40 hover:shadow-lg transition-all"
               >
                 <div className="space-y-4">
                   <div className="flex items-center justify-between">
                     <span className="text-3xl">{service.icon}</span>
                     {service.badge && (
-                      <span className="rounded-full bg-emerald-50 text-emerald-800 border border-emerald-200 px-2.5 py-0.5 text-[0.68rem] font-bold">
+                      <span className="rounded-full bg-orange-50 text-orange-800 border border-orange-200 px-2.5 py-0.5 text-[0.68rem] font-bold">
                         {service.badge}
                       </span>
                     )}
@@ -208,7 +208,7 @@ function Services() {
                     {service.title}
                   </h3>
 
-                  <p className="text-xs text-slate-600 leading-relaxed">{service.overview}</p>
+                  <p className="text-xs text-slate-600 leading-relaxed font-bangla">{service.overview}</p>
 
                   <div className="pt-2 border-t border-slate-100">
                     <BulletList items={service.benefits} />
@@ -216,11 +216,11 @@ function Services() {
                 </div>
 
                 <div className="pt-5 border-t border-slate-100 mt-5 flex items-center justify-between text-xs">
-                  <span className="text-slate-500 font-semibold">{service.intakeNote || "Open for Enrollment"}</span>
+                  <span className="text-slate-500 font-semibold">{service.intakeNote || "Admission Open"}</span>
                   <button
                     type="button"
                     onClick={open}
-                    className="text-emerald-600 font-bold hover:underline flex items-center gap-1 cursor-pointer"
+                    className="text-orange-600 font-bold hover:underline flex items-center gap-1 cursor-pointer"
                   >
                     <span>Consult Counselor</span>
                     <span>→</span>
@@ -236,15 +236,15 @@ function Services() {
       {(activeCategory === "all" || activeCategory === "language-academy") && (
         <section className="section-shell py-16 border-t border-slate-200 bg-slate-50/50">
           <div className="text-center max-w-3xl mx-auto mb-12">
-            <div className="inline-flex items-center gap-2 rounded-full bg-emerald-50 border border-emerald-200 px-3.5 py-1 text-xs font-bold text-emerald-800 mb-3">
-              <IconSparkles className="w-3.5 h-3.5 text-emerald-600" />
-              <span>EDU Global Language Academy</span>
+            <div className="inline-flex items-center gap-2 rounded-full bg-orange-50 border border-orange-200 px-3.5 py-1 text-xs font-bold text-orange-800 mb-3">
+              <IconSparkles className="w-3.5 h-3.5 text-orange-600" />
+              <span>UNI Language Academy</span>
             </div>
             <h2 className="font-display text-2xl sm:text-4xl font-black text-slate-900 tracking-tight">
-              Premier English & Language <span className="text-emerald-600">Training Programs</span>
+              Premier English & Language <span className="text-orange-600">Training Programs</span>
             </h2>
-            <p className="text-xs sm:text-sm text-slate-600 mt-2">
-              Master English communication for study abroad, professional careers, and kids' phonics mastery with our certified trainers.
+            <p className="text-xs sm:text-sm text-slate-600 mt-2 font-bangla">
+              আইইএলটিএস পরীক্ষায় কাঙ্ক্ষিত ব্যান্ড স্কোর অর্জন, স্পোকেন ইংলিশ ফ্লুয়েন্সি এবং শিশুদের ভাষার ভিত্তি মজবুত করার আধুনিক একাডেমি।
             </p>
           </div>
 
@@ -252,14 +252,14 @@ function Services() {
             {courses.map((course) => (
               <div
                 key={course.slug}
-                className="rounded-3xl border border-slate-200 bg-white p-6 shadow-md flex flex-col justify-between hover:border-emerald-500/50 hover:shadow-xl transition-all"
+                className="rounded-3xl border border-slate-200 bg-white p-6 shadow-md flex flex-col justify-between hover:border-orange-500/50 hover:shadow-xl transition-all"
               >
                 <div className="space-y-4">
                   <div className="flex items-center justify-between">
-                    <span className="text-3xl p-2 rounded-2xl bg-emerald-50 border border-emerald-200/80">
-                      {course.icon}
+                    <span className="text-3xl p-2 rounded-2xl bg-orange-50 border border-orange-200/80">
+                      {course.icon || "🎓"}
                     </span>
-                    <span className="rounded-full bg-emerald-100 text-emerald-900 border border-emerald-200 px-2.5 py-0.5 text-[0.68rem] font-bold">
+                    <span className="rounded-full bg-orange-100 text-orange-900 border border-orange-200 px-2.5 py-0.5 text-[0.68rem] font-bold">
                       {course.badge}
                     </span>
                   </div>
@@ -268,10 +268,10 @@ function Services() {
                     <h3 className="font-display text-lg font-black text-slate-900">
                       {course.title}
                     </h3>
-                    <p className="text-xs font-semibold text-emerald-700 mt-0.5">{course.subtitle}</p>
+                    <p className="text-xs font-semibold text-orange-700 mt-0.5">{course.subtitle || course.tagline}</p>
                   </div>
 
-                  <p className="text-xs text-slate-600 leading-relaxed">{course.description}</p>
+                  <p className="text-xs text-slate-600 leading-relaxed font-bangla">{course.description || course.desc}</p>
 
                   <div className="space-y-2 rounded-2xl bg-slate-50 p-3 text-[0.72rem] text-slate-700 border border-slate-200/70">
                     <div className="flex justify-between">
@@ -280,11 +280,11 @@ function Services() {
                     </div>
                     <div className="flex justify-between">
                       <span className="text-slate-500 font-medium">Schedule:</span>
-                      <strong className="text-slate-900">{course.classSchedule}</strong>
+                      <strong className="text-slate-900">{course.classSchedule || course.schedule}</strong>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-slate-500 font-medium">Format:</span>
-                      <strong className="text-slate-900">{course.batchType}</strong>
+                      <strong className="text-slate-900">{course.batchType || course.format}</strong>
                     </div>
                   </div>
 
@@ -292,8 +292,8 @@ function Services() {
                     <span className="text-[0.68rem] font-extrabold uppercase tracking-wider text-slate-500 block">
                       Course Highlights:
                     </span>
-                    <ul className="space-y-1">
-                      {course.highlights.slice(0, 3).map((h) => (
+                    <ul className="space-y-1 font-bangla">
+                      {(course.highlights ?? course.features ?? []).slice(0, 3).map((h) => (
                         <li key={h} className="flex items-start gap-1.5 text-xs text-slate-700">
                           <IconCheck className="w-3.5 h-3.5 text-emerald-600 shrink-0 mt-0.5" />
                           <span>{h}</span>
@@ -307,14 +307,14 @@ function Services() {
                   <button
                     type="button"
                     onClick={open}
-                    className="btn-luxury-primary w-full text-xs py-2.5 justify-center shadow-md hover:shadow-emerald-500/30 cursor-pointer font-bold bg-emerald-500 hover:bg-emerald-400 text-slate-950"
+                    className="btn-primary w-full text-xs py-2.5 justify-center shadow-md cursor-pointer font-bold"
                   >
                     <span>Enroll Now</span>
                     <span>→</span>
                   </button>
                   <a
                     href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(
-                      `Hello EDU Global! I want to enroll in the ${course.title} batch.`,
+                      `Hello ${company.name}! I want to enroll in the ${course.title} batch.`,
                     )}`}
                     target="_blank"
                     rel="noreferrer"
@@ -330,87 +330,87 @@ function Services() {
         </section>
       )}
 
-      {/* 5. 10+ Official Destinations Showcase */}
+      {/* 5. Key Flagship Destinations Showcase */}
       {(activeCategory === "all" || activeCategory === "study-abroad") && (
         <section className="section-shell py-16 border-t border-slate-200">
-          <div className="rounded-3xl border border-slate-800 bg-[#0c1f17] p-8 sm:p-12 text-white shadow-2xl">
+          <div className="rounded-3xl border border-slate-800 bg-[#0f172a] p-8 sm:p-12 text-white shadow-2xl">
             <div className="text-center max-w-2xl mx-auto mb-10">
-              <span className="rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 px-3.5 py-1 text-xs font-bold inline-block mb-3">
-                Global Destinations (Verified from Brand Banner)
+              <span className="rounded-full bg-orange-500/20 text-orange-400 border border-orange-500/30 px-3.5 py-1 text-xs font-bold inline-block mb-3">
+                Flagship Destinations (Verified from Brand Banner)
               </span>
               <h2 className="font-display text-2xl sm:text-4xl font-black text-white tracking-tight">
-                Top Study Pathways with EDU Global
+                Top Study Pathways with {company.name}
               </h2>
               <p className="text-xs sm:text-sm text-slate-300 mt-2">
-                10+ verified countries featured on our official banner and university partner network.
+                Featured study destinations across Cyprus, Europe, UK, Malaysia, and North America with or without IELTS.
               </p>
             </div>
 
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {[
                 {
+                  title: "Cyprus (Europe)",
+                  icon: "🇨🇾",
+                  desc: "Flagship destination! Tuition fees from €2,500/year, Without IELTS options, fast admission offers, and student part-time work rights.",
+                  badge: "Flagship Destination",
+                },
+                {
                   title: "United Kingdom",
                   icon: "🇬🇧",
-                  desc: "1-year master's programs, fast CAS turnaround, Canterbury Christ Church University direct admissions, and Graduate Route work visa.",
-                  badge: "Direct University Partner",
+                  desc: "1-year master's degrees, 2-year Graduate Route Post Study Work (PSW), and admissions open for Jan, May, and September intakes.",
+                  badge: "Any Intake Open",
                 },
                 {
-                  title: "Europe & Schengen",
-                  icon: "🇪🇺",
-                  desc: "Cyprus, Greece, Italy, and Hungary admissions with Schengen travel access and special Free Bank Support for initial applicants.",
-                  badge: "Free Bank Support",
+                  title: "Malaysia",
+                  icon: "🇲🇾",
+                  desc: "Affordable UK/Australian twinning dual degrees, fast EMGS visa processing, and budget-friendly living costs.",
+                  badge: "Fast Visa & Budget",
                 },
                 {
-                  title: "United States",
-                  icon: "🇺🇸",
-                  desc: "I-20 issuance, up to 3 years STEM OPT work authorization, merit scholarships, and visa interview preparation.",
-                  badge: "STEM & OPT",
+                  title: "Malta (Schengen)",
+                  icon: "🇲🇹",
+                  desc: "English-speaking European Schengen country, competitive tuition fees, and part-time work rights during study.",
+                  badge: "Schengen Country",
                 },
                 {
-                  title: "Canada",
-                  icon: "🇨🇦",
-                  desc: "Designated Learning Institutions (DLI), co-op internships, and Post-Graduation Work Permits (PGWP).",
-                  badge: "Work Permits",
+                  title: "Finland",
+                  icon: "🇫🇮",
+                  desc: "World-class Nordic education, 30 hours per week student work rights, and post-graduation residence permit.",
+                  badge: "Nordic Quality",
                 },
                 {
                   title: "Australia",
                   icon: "🇦🇺",
-                  desc: "Top institutions, high hourly part-time earnings, post-study work rights, and high visa grant rate.",
-                  badge: "High Minimum Wage",
+                  desc: "Leading university network, post-study work rights up to 4+ years, spouse work rights, and Subclass 500 visa filing.",
+                  badge: "High Visa Ratio",
                 },
                 {
-                  title: "New Zealand",
-                  icon: "🇳🇿",
-                  desc: "Globally accredited universities, welcoming community, safe study environment, and post-study open work visa.",
-                  badge: "Safe & Welcoming",
+                  title: "Canada",
+                  icon: "🇨🇦",
+                  desc: "Designated Learning Institutions (DLI), up to 3-year PGWP, and clear permanent residency (PR) pathways.",
+                  badge: "PGWP & PR Track",
                 },
                 {
-                  title: "Japan & South Korea",
-                  icon: "🇯🇵",
-                  desc: "Cutting-edge technology degrees, Japanese language training (JLPT), and high-tech career placements in Asia.",
-                  badge: "Asia Tech Hubs",
+                  title: "United States",
+                  icon: "🇺🇸",
+                  desc: "Top institutions, up to 3 years STEM OPT work authorization, merit scholarships, and embassy interview coaching.",
+                  badge: "STEM & OPT",
                 },
                 {
-                  title: "Finland & Ireland",
-                  icon: "🇫🇮",
-                  desc: "Nordic education quality, European tech capital opportunities in Dublin, and generous stay-back work permits.",
-                  badge: "Innovation Leaders",
-                },
-                {
-                  title: "Malaysia & Cyprus",
-                  icon: "🇲🇾",
-                  desc: "Budget-friendly tuition, HELP University & MMU credit transfers, easy entry requirements without IELTS.",
-                  badge: "Budget Friendly",
+                  title: "Italy (Schengen)",
+                  icon: "🇮🇹",
+                  desc: "English-taught programs, regional scholarships, and full Schengen mobility throughout Europe.",
+                  badge: "Regional Scholarships",
                 },
               ].map((v) => (
                 <div
                   key={v.title}
-                  className="rounded-2xl bg-slate-900/90 border border-slate-800 p-5 space-y-2.5 flex flex-col justify-between hover:border-emerald-500/50 transition-colors"
+                  className="rounded-2xl bg-slate-900/90 border border-slate-800 p-5 space-y-2.5 flex flex-col justify-between hover:border-orange-500/50 transition-colors"
                 >
                   <div className="space-y-2">
                     <div className="flex items-center justify-between">
                       <span className="text-2xl">{v.icon}</span>
-                      <span className="text-[0.65rem] font-bold text-emerald-400 bg-emerald-500/20 px-2 py-0.5 rounded-full border border-emerald-500/30">
+                      <span className="text-[0.65rem] font-bold text-orange-400 bg-orange-500/20 px-2 py-0.5 rounded-full border border-orange-500/30">
                         {v.badge}
                       </span>
                     </div>
@@ -420,7 +420,7 @@ function Services() {
                   <button
                     type="button"
                     onClick={open}
-                    className="text-[0.72rem] font-bold text-emerald-400 hover:text-emerald-300 text-left pt-2 border-t border-slate-800 cursor-pointer"
+                    className="text-[0.72rem] font-bold text-orange-400 hover:text-orange-300 text-left pt-2 border-t border-slate-800 cursor-pointer"
                   >
                     Check Eligibility →
                   </button>
@@ -434,15 +434,15 @@ function Services() {
       {/* 6. Transparency Comparison Table */}
       <section className="section-shell py-16 border-t border-slate-200">
         <div className="text-center max-w-3xl mx-auto mb-10">
-          <div className="inline-flex items-center gap-2 rounded-full bg-emerald-50 border border-emerald-200 px-3.5 py-1 text-xs font-bold text-emerald-800 mb-2.5">
-            <IconSparkles className="w-3.5 h-3.5 text-emerald-600" />
+          <div className="inline-flex items-center gap-2 rounded-full bg-orange-50 border border-orange-200 px-3.5 py-1 text-xs font-bold text-orange-800 mb-2.5">
+            <IconSparkles className="w-3.5 h-3.5 text-orange-600" />
             <span>Honesty & Transparency</span>
           </div>
           <h2 className="font-display text-2xl sm:text-4xl font-black text-slate-900 tracking-tight">
-            Why Students Choose <span className="text-emerald-600">EDU Global</span>
+            Why Students Trust <span className="text-orange-600">{company.name}</span>
           </h2>
           <p className="text-xs sm:text-sm text-slate-600 mt-1">
-            Compare our Free Bank Support, 100% Admission commitment, in-house Language Academy, and prime Dhanmondi location against ordinary agencies.
+            Compare our honest commitments, flagship Cyprus & UK options, and 4-branch network against ordinary consulting firms.
           </p>
         </div>
 
@@ -452,10 +452,10 @@ function Services() {
               <thead className="bg-slate-950 text-white font-display uppercase tracking-wider text-[0.7rem]">
                 <tr>
                   <th className="p-4 sm:p-5">Key Parameter</th>
-                  <th className="p-4 sm:p-5 text-emerald-400 font-extrabold bg-[#0c1f17]">
-                    ★ EDU Global
+                  <th className="p-4 sm:p-5 text-orange-400 font-extrabold bg-[#0f172a]">
+                    ★ {company.name}
                   </th>
-                  <th className="p-4 sm:p-5 text-slate-400">Traditional Agencies</th>
+                  <th className="p-4 sm:p-5 text-slate-400">Ordinary Agencies</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-slate-100">
@@ -464,14 +464,14 @@ function Services() {
                     key={row.feature}
                     className={cn(
                       "transition-colors hover:bg-slate-50",
-                      row.highlight && "bg-emerald-50/20",
+                      row.highlight && "bg-orange-50/20",
                     )}
                   >
                     <td className="p-4 sm:p-5 font-bold text-slate-900">{row.feature}</td>
-                    <td className="p-4 sm:p-5 font-bold text-slate-900 bg-emerald-50/40">
+                    <td className="p-4 sm:p-5 font-bold text-slate-900 bg-orange-50/40">
                       <div className="flex items-center gap-2">
-                        <IconCheck className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>{row.edugbl}</span>
+                        <IconCheck className="w-4 h-4 text-orange-600 shrink-0" />
+                        <span>{row.uniConsultants}</span>
                       </div>
                     </td>
                     <td className="p-4 sm:p-5 text-slate-500">{row.traditional}</td>
@@ -486,15 +486,15 @@ function Services() {
       {/* 7. Step-by-Step Roadmap */}
       <section className="section-shell py-16 border-t border-slate-200">
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <div className="inline-flex items-center gap-2 rounded-full bg-emerald-50 border border-emerald-200 px-3.5 py-1 text-xs font-bold text-emerald-800 mb-2.5">
-            <IconSparkles className="w-3.5 h-3.5 text-emerald-600" />
+          <div className="inline-flex items-center gap-2 rounded-full bg-orange-50 border border-orange-200 px-3.5 py-1 text-xs font-bold text-orange-800 mb-2.5">
+            <IconSparkles className="w-3.5 h-3.5 text-orange-600" />
             <span>Structured Process</span>
           </div>
           <h2 className="font-display text-2xl sm:text-4xl font-black text-slate-900 tracking-tight">
             Our Proven 5-Step Roadmap
           </h2>
           <p className="text-xs sm:text-sm text-slate-600 mt-1">
-            Structured roadmap from free profile evaluation at our Dhanmondi Head Office to language training, admission offer, visa grant, and pre-departure briefing.
+            Structured roadmap from free profile evaluation at our Dhaka Head Office (92 Ali Bhaban) to language training, admission offer, visa grant, and pre-departure briefing.
           </p>
         </div>
 
@@ -502,10 +502,10 @@ function Services() {
           {processSteps.map((step) => (
             <div
               key={step.step}
-              className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm space-y-3 relative hover:border-emerald-500/50 hover:shadow-md transition-all"
+              className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm space-y-3 relative hover:border-orange-500/50 hover:shadow-md transition-all"
             >
               <div className="flex items-center justify-between">
-                <span className="font-display font-black text-2xl text-emerald-600">{step.step}</span>
+                <span className="font-display font-black text-2xl text-orange-600">{step.step}</span>
                 <span className="rounded-full bg-slate-100 text-slate-700 text-[0.68rem] font-bold px-2.5 py-0.5">
                   {step.badge}
                 </span>
@@ -524,7 +524,7 @@ function Services() {
             Frequently Asked Questions on Services
           </h2>
           <p className="text-xs sm:text-sm text-slate-600 mt-1">
-            Clear, transparent answers about Free Bank Support, Study Gap & Low CGPA acceptance, Language Academy, and admission procedures.
+            Clear, transparent answers about Cyprus admissions, With / Without IELTS options, Language Academy, and visa procedures.
           </p>
         </div>
 
@@ -537,7 +537,7 @@ function Services() {
                 className={cn(
                   "rounded-2xl border transition-all duration-300 overflow-hidden",
                   isOpen
-                    ? "bg-white border-emerald-500 shadow-md ring-1 ring-emerald-500/20"
+                    ? "bg-white border-orange-500 shadow-md ring-1 ring-orange-500/20"
                     : "bg-white border-slate-200 hover:border-slate-300",
                 )}
               >
@@ -550,7 +550,7 @@ function Services() {
                   <span
                     className={cn(
                       "flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-xs font-bold transition-transform duration-300",
-                      isOpen ? "bg-emerald-600 text-white rotate-180" : "bg-slate-100 text-slate-600",
+                      isOpen ? "bg-orange-600 text-white rotate-180" : "bg-slate-100 text-slate-600",
                     )}
                   >
                     ↓

@@ -21,6 +21,21 @@ export interface DestinationCardData {
 
 const destinationCards: DestinationCardData[] = [
   {
+    slug: "cyprus",
+    name: "Cyprus (Europe)",
+    region: "Europe",
+    flag: "🇨🇾",
+    image:
+      "https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=800&q=80",
+    featured: true,
+    highlightTag: "Flagship Destination · With/Without IELTS",
+    visaSpeed: "MOI Accepted · Tuition from €2,500",
+    withoutIelts: true,
+    avgTuition: "€2,500 – €3,800/yr",
+    pswv: "Low Tuition & European Work Rights",
+    topIntake: "February & September",
+  },
+  {
     slug: "uk",
     name: "United Kingdom",
     region: "Europe",
@@ -28,162 +43,12 @@ const destinationCards: DestinationCardData[] = [
     image:
       "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=800&q=80",
     featured: true,
-    highlightTag: "Official Partner · Canterbury Christ Church",
-    visaSpeed: "1-Yr Masters & Fast Visa",
+    highlightTag: "Admission Open For Any Intake",
+    visaSpeed: "1-Yr Masters & 2-Yr PSW",
     withoutIelts: true,
     avgTuition: "£11,000 – £16,500/yr",
-    pswv: "2-Year Graduate Visa (PSW)",
+    pswv: "2-Year Graduate Route (PSW)",
     topIntake: "Jan / May / Sep",
-  },
-  {
-    slug: "cyprus",
-    name: "Cyprus",
-    region: "Europe",
-    flag: "🇨🇾",
-    image:
-      "https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=800&q=80",
-    featured: true,
-    highlightTag: "Free Bank Support · 1st 20 Students",
-    visaSpeed: "MOI Accepted / Fast Visa",
-    withoutIelts: true,
-    avgTuition: "€2,500 – €3,800/yr",
-    pswv: "Low Tuition & European Transfer",
-    topIntake: "February & September",
-  },
-  {
-    slug: "usa",
-    name: "United States",
-    region: "North America",
-    flag: "🇺🇸",
-    image:
-      "https://images.unsplash.com/photo-1508433957232-3107f5fd5995?auto=format&fit=crop&w=800&q=80",
-    featured: true,
-    highlightTag: "Official Banner · STEM OPT 3 Yrs",
-    visaSpeed: "F-1 Mock Consular Prep",
-    withoutIelts: false,
-    avgTuition: "$14,000 – $26,000/yr",
-    pswv: "Up to 3-Year STEM OPT",
-    topIntake: "Fall (Aug) & Spring (Jan)",
-  },
-  {
-    slug: "canada",
-    name: "Canada",
-    region: "North America",
-    flag: "🇨🇦",
-    image:
-      "https://images.unsplash.com/photo-1517935703635-2717090c2210?auto=format&fit=crop&w=800&q=80",
-    featured: true,
-    highlightTag: "Official Banner · DLIs & PGWP",
-    visaSpeed: "PAL & Study Permit Filing",
-    withoutIelts: false,
-    avgTuition: "CAD $15,000 – $24,000/yr",
-    pswv: "Up to 3-Year PGWP",
-    topIntake: "Jan / May / Sep",
-  },
-  {
-    slug: "australia",
-    name: "Australia",
-    region: "Oceania",
-    flag: "🇦🇺",
-    image:
-      "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?auto=format&fit=crop&w=800&q=80",
-    featured: true,
-    highlightTag: "Official Banner · Spouse Work Rights",
-    visaSpeed: "Subclass 500 Visa Advisory",
-    withoutIelts: false,
-    avgTuition: "AUD $22,000 – $36,000/yr",
-    pswv: "2 to 4+ Years Post-Study Work",
-    topIntake: "February & July",
-  },
-  {
-    slug: "new-zealand",
-    name: "New Zealand",
-    region: "Oceania",
-    flag: "🇳🇿",
-    image:
-      "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=800&q=80",
-    featured: true,
-    highlightTag: "Official Banner · 3-Year PSW",
-    visaSpeed: "High Approval & Safe Haven",
-    withoutIelts: false,
-    avgTuition: "NZD $24,000 – $35,000/yr",
-    pswv: "Up to 3-Year Open Work Visa",
-    topIntake: "February & July",
-  },
-  {
-    slug: "finland",
-    name: "Finland",
-    region: "Europe",
-    flag: "🇫🇮",
-    image:
-      "https://images.unsplash.com/photo-1538332576228-eb5b4c4de6f5?auto=format&fit=crop&w=800&q=80",
-    featured: true,
-    highlightTag: "Official Banner · 30 Hrs Work",
-    visaSpeed: "High Quality Nordic Degrees",
-    withoutIelts: false,
-    avgTuition: "€8,000 – €12,000/yr",
-    pswv: "2-Year Job Search Residence",
-    topIntake: "August / September",
-  },
-  {
-    slug: "ireland",
-    name: "Ireland",
-    region: "Europe",
-    flag: "🇮🇪",
-    image:
-      "https://images.unsplash.com/photo-1549918864-48ac978761a4?auto=format&fit=crop&w=800&q=80",
-    featured: true,
-    highlightTag: "Official Banner · Tech Capital",
-    visaSpeed: "Silicon Valley of Europe",
-    withoutIelts: false,
-    avgTuition: "€10,000 – €16,000/yr",
-    pswv: "2-Year Stay-Back Scheme",
-    topIntake: "September & January",
-  },
-  {
-    slug: "japan",
-    name: "Japan",
-    region: "Asia",
-    flag: "🇯🇵",
-    image:
-      "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=800&q=80",
-    featured: true,
-    highlightTag: "Official Banner · Language to Degree",
-    visaSpeed: "COE & Embassy Processing",
-    withoutIelts: true,
-    avgTuition: "¥700,000 – ¥1,100,000/yr",
-    pswv: "28 Hrs/Wk Work & Employment",
-    topIntake: "April & October",
-  },
-  {
-    slug: "south-korea",
-    name: "South Korea",
-    region: "Asia",
-    flag: "🇰🇷",
-    image:
-      "https://images.unsplash.com/photo-1538485399081-7191377e8241?auto=format&fit=crop&w=800&q=80",
-    featured: true,
-    highlightTag: "Official Banner · High-Tech Hub",
-    visaSpeed: "GKS & University Waivers",
-    withoutIelts: false,
-    avgTuition: "$3,500 – $7,000/sem",
-    pswv: "D-10 Job Search Visa",
-    topIntake: "March & September",
-  },
-  {
-    slug: "italy",
-    name: "Italy",
-    region: "Europe",
-    flag: "🇮🇹",
-    image:
-      "https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=800&q=80",
-    featured: true,
-    highlightTag: "Official FB · 100% DSU Scholarships",
-    visaSpeed: "English Degrees & Schengen Mobility",
-    withoutIelts: true,
-    avgTuition: "€1,000 – €3,000/yr (Often Free)",
-    pswv: "1-Year Job Search Permit",
-    topIntake: "September / October",
   },
   {
     slug: "malaysia",
@@ -193,12 +58,102 @@ const destinationCards: DestinationCardData[] = [
     image:
       "https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=800&q=80",
     featured: true,
-    highlightTag: "Official FB · HELP & MMU Partner",
-    visaSpeed: "Fast Visa & No IELTS Required",
+    highlightTag: "Fast EMGS Visa · UK/Aus Dual Degrees",
+    visaSpeed: "No IELTS Required / MOI",
     withoutIelts: true,
     avgTuition: "$3,500 – $6,500/yr",
-    pswv: "UK/Aus Twinning Degrees",
+    pswv: "Affordable Tuition & Safe Living",
     topIntake: "Jan / May / Aug / Oct",
+  },
+  {
+    slug: "malta",
+    name: "Malta (Schengen)",
+    region: "Europe",
+    flag: "🇲🇹",
+    image:
+      "https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=800&q=80",
+    featured: true,
+    highlightTag: "Schengen Country · English Speaking",
+    visaSpeed: "Part-Time Work Rights Allowed",
+    withoutIelts: true,
+    avgTuition: "€4,000 – €7,000/yr",
+    pswv: "Schengen Mobility & Job Market",
+    topIntake: "Feb / Apr / Oct",
+  },
+  {
+    slug: "finland",
+    name: "Finland",
+    region: "Europe",
+    flag: "🇫🇮",
+    image:
+      "https://images.unsplash.com/photo-1538332576228-eb5b4c4de6f5?auto=format&fit=crop&w=800&q=80",
+    featured: true,
+    highlightTag: "World-Class Nordic Higher Education",
+    visaSpeed: "30 Hrs/Wk Work Rights",
+    withoutIelts: false,
+    avgTuition: "€8,000 – €12,000/yr",
+    pswv: "2-Year Job Search Residence",
+    topIntake: "August / September",
+  },
+  {
+    slug: "australia",
+    name: "Australia",
+    region: "Oceania",
+    flag: "🇦🇺",
+    image:
+      "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?auto=format&fit=crop&w=800&q=80",
+    featured: true,
+    highlightTag: "High Visa Success · Subclass 500",
+    visaSpeed: "Post Study Work Rights",
+    withoutIelts: false,
+    avgTuition: "AUD $22,000 – $36,000/yr",
+    pswv: "2 to 4+ Years Post-Study Work",
+    topIntake: "February & July",
+  },
+  {
+    slug: "canada",
+    name: "Canada",
+    region: "North America",
+    flag: "🇨🇦",
+    image:
+      "https://images.unsplash.com/photo-1517935703635-2717090c2210?auto=format&fit=crop&w=800&q=80",
+    featured: true,
+    highlightTag: "DLI Colleges & Universities",
+    visaSpeed: "Study Permit & PAL Guidance",
+    withoutIelts: false,
+    avgTuition: "CAD $15,000 – $24,000/yr",
+    pswv: "Up to 3-Year PGWP",
+    topIntake: "Jan / May / Sep",
+  },
+  {
+    slug: "usa",
+    name: "United States",
+    region: "North America",
+    flag: "🇺🇸",
+    image:
+      "https://images.unsplash.com/photo-1508433957232-3107f5fd5995?auto=format&fit=crop&w=800&q=80",
+    featured: true,
+    highlightTag: "STEM OPT 3 Yrs · Merit Scholarships",
+    visaSpeed: "F-1 Mock Consular Prep",
+    withoutIelts: false,
+    avgTuition: "$14,000 – $26,000/yr",
+    pswv: "Up to 3-Year STEM OPT",
+    topIntake: "Fall (Aug) & Spring (Jan)",
+  },
+  {
+    slug: "italy",
+    name: "Italy (Schengen)",
+    region: "Europe",
+    flag: "🇮🇹",
+    image:
+      "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?auto=format&fit=crop&w=800&q=80",
+    featured: true,
+    highlightTag: "Regional Scholarships Available",
+    visaSpeed: "English Degrees & Schengen Mobility",
+    withoutIelts: true,
+    avgTuition: "€1,000 – €3,000/yr (Often Free)",
+    pswv: "1-Year Job Search Permit",
+    topIntake: "September / October",
   },
 ];
 
@@ -217,15 +172,15 @@ export function VisualDestinationBento() {
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
         <SlideIn direction="left" distance={30}>
           <div className="space-y-3">
-            <div className="inline-flex items-center gap-2 rounded-full bg-blue-50 border border-blue-200 px-3.5 py-1 text-xs font-bold text-[#0047ba]">
-              <IconSparkles className="w-3.5 h-3.5 text-blue-600" />
-              <span>Official Banner Destinations · EDU Global</span>
+            <div className="inline-flex items-center gap-2 rounded-full bg-orange-50 border border-orange-200 px-3.5 py-1 text-xs font-bold text-orange-600">
+              <IconSparkles className="w-3.5 h-3.5 text-orange-500" />
+              <span>Official Banner Destinations · UNI Consultants</span>
             </div>
             <h2 className="font-display text-2xl sm:text-4xl font-black text-[#0a1931] tracking-tight">
-              Curated Higher Study <span className="text-[#0047ba]">Destinations</span>
+              Curated Higher Study <span className="text-orange-600">Destinations</span>
             </h2>
             <p className="text-xs sm:text-sm text-slate-600 max-w-xl font-bangla">
-              আমাদের অফিসিয়াল ব্যানারের ১০+ শীর্ষ দেশসমূহ। ইউরোপ, নিউজিল্যান্ড, অস্ট্রেলিয়া, ইউকে, ইউএসএ, কানাডা, জাপান ও দক্ষিণ কোরিয়ায় ইডিইউ গ্লোবাল নিশ্চিত করে ১০০% অ্যাডমিশন গাইডেন্স ও ভিসা সহায়তা।
+              আমাদের অফিসিয়াল ব্যানারের প্রধান দেশসমূহ: সাইপ্রাস, যুক্তরাজ্য, মালয়েশিয়া, মাল্টা, ফিনল্যান্ড, অস্ট্রেলিয়া ও কানাডায় UNI Consultants নিশ্চিত করে সৎ অ্যাডমিশন গাইডেন্স ও নির্ভরযোগ্য ভিসা সহায়তা।
             </p>
           </div>
         </SlideIn>
@@ -240,7 +195,7 @@ export function VisualDestinationBento() {
               className={cn(
                 "rounded-xl px-3.5 py-1.5 text-xs font-bold transition-all cursor-pointer",
                 selectedRegion === reg
-                  ? "bg-[#0047ba] text-white shadow-sm"
+                  ? "bg-orange-600 text-white shadow-sm"
                   : "text-slate-600 hover:text-slate-900 hover:bg-slate-200/60",
               )}
             >
@@ -291,11 +246,11 @@ export function VisualDestinationBento() {
                   </div>
                   <div className="p-2.5 rounded-xl bg-slate-50 border border-slate-100">
                     <span className="text-[0.65rem] text-slate-400 block font-bold uppercase">Intakes</span>
-                    <span className="font-extrabold text-[#0047ba] block truncate mt-0.5">{item.topIntake}</span>
+                    <span className="font-extrabold text-orange-600 block truncate mt-0.5">{item.topIntake}</span>
                   </div>
                 </div>
 
-                <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-[#0a1931] group-hover:text-[#0047ba] transition-colors">
+                <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-[#0a1931] group-hover:text-orange-600 transition-colors">
                   <span>{item.pswv}</span>
                   <IconArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
                 </div>
