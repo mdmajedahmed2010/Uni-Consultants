@@ -12,7 +12,7 @@ import { CtaBand, IconSparkles } from "@/components/ui-blocks";
 import { faqs, company } from "@/lib/site-data";
 import { cn } from "@/lib/utils";
 import { ScrollReveal } from "@/components/scroll-reveal";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -94,7 +94,7 @@ function Home() {
         });
 
   return (
-    <div className="relative min-h-screen bg-[#070B16] text-slate-100 selection:bg-orange-500 selection:text-white">
+    <div className="relative min-h-screen w-full overflow-x-hidden bg-[#070B16] text-slate-100 selection:bg-orange-500 selection:text-white">
       {/* 1. Grand Opening: Hero Showcase with Double-Bezel Concierge & Banner Lightbox */}
       <HeroShowcase />
 
@@ -199,11 +199,21 @@ function Home() {
                     </span>
                   </button>
 
-                  {isOpen && (
-                    <div className="px-5 pb-5 pt-1 text-xs sm:text-sm text-slate-300 leading-relaxed font-medium border-t border-white/5">
-                      {faq.a}
-                    </div>
-                  )}
+                  <AnimatePresence>
+                    {isOpen && (
+                      <motion.div
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: "auto", opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        transition={{ duration: 0.25, ease: "easeInOut" }}
+                        className="overflow-hidden"
+                      >
+                        <div className="px-4 sm:px-5 pb-4 sm:pb-5 pt-1 text-xs sm:text-sm text-slate-300 leading-relaxed font-medium border-t border-white/5">
+                          {faq.a}
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
                 </div>
               );
             })}

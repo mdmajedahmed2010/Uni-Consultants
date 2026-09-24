@@ -523,26 +523,30 @@ export function CtaBand() {
           Book your free advisory session with {company.name}. 100% genuine guidance across Cyprus, UK, Malaysia, Malta, Australia, Canada, USA, and Europe. Benefit from Without IELTS options, study gap acceptance, and premier UNI Language Academy.
         </p>
 
-        <div className="flex flex-wrap items-center justify-center gap-4 pt-2">
-          <button
+        <div className="flex flex-col xs:flex-row items-center justify-center gap-3 sm:gap-4 pt-2">
+          <motion.button
+            whileHover={{ scale: 1.02 }}
+            whileTap={{ scale: 0.97 }}
             type="button"
             onClick={open}
-            className="btn-primary text-xs sm:text-sm py-3.5 px-8 shadow-xl active:scale-95 cursor-pointer font-bold"
+            className="btn-primary w-full xs:w-auto text-xs sm:text-sm py-3.5 px-8 shadow-xl cursor-pointer font-bold flex items-center justify-center gap-2"
           >
             <span>Book Free Assessment</span>
             <IconArrowRight className="w-4 h-4" />
-          </button>
-          <a
+          </motion.button>
+          <motion.a
+            whileHover={{ scale: 1.02 }}
+            whileTap={{ scale: 0.97 }}
             href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(
               `Hello ${company.name}! I would like to book a free consultation for Study Abroad admissions and language courses.`,
             )}`}
             target="_blank"
             rel="noreferrer"
-            className="btn-luxury-secondary text-xs sm:text-sm py-3.5 px-7 shadow-xl text-slate-900 active:scale-95 cursor-pointer font-bold"
+            className="btn-luxury-secondary w-full xs:w-auto text-xs sm:text-sm py-3.5 px-7 shadow-xl text-slate-900 cursor-pointer font-bold flex items-center justify-center gap-2"
           >
             <IconWhatsApp className="w-4 h-4 text-emerald-600" />
             <span>WhatsApp {company.phones[0]}</span>
-          </a>
+          </motion.a>
         </div>
       </motion.div>
     </section>

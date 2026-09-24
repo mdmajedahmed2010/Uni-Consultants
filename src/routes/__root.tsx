@@ -135,11 +135,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 
 function RootShell({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" className="overflow-x-hidden">
       <head>
         <HeadContent />
       </head>
-      <body className="min-h-screen bg-background font-sans antialiased text-foreground selection:bg-blue-600 selection:text-white">
+      <body className="min-h-screen w-full overflow-x-hidden bg-background font-sans antialiased text-foreground selection:bg-orange-500 selection:text-white">
         {children}
         <Scripts />
       </body>
@@ -153,9 +153,9 @@ function RootComponent() {
   return (
     <QueryClientProvider client={queryClient}>
       <RegisterModalProvider>
-        <div className="flex min-h-screen flex-col bg-background">
+        <div className="flex min-h-screen w-full flex-col bg-background overflow-x-hidden">
           <SiteHeader />
-          <main className="flex-1">
+          <main className="flex-1 w-full overflow-x-hidden">
             <Outlet />
           </main>
           <SiteFooter />

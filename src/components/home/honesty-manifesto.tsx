@@ -52,40 +52,91 @@ export function HonestyManifesto() {
   const { open } = useRegisterModal();
 
   return (
-    <section className="relative bg-[#070B16] py-20 sm:py-28 lg:py-32 text-white overflow-hidden border-t border-white/10">
-      {/* Background Radiance */}
-      <div className="pointer-events-none absolute -top-32 right-1/4 h-[500px] w-[500px] rounded-full bg-orange-600/10 blur-[150px]" />
-      <div className="pointer-events-none absolute bottom-0 left-1/4 h-[400px] w-[400px] rounded-full bg-amber-600/10 blur-[130px]" />
+    <section className="relative bg-[#070B16] py-16 sm:py-24 lg:py-32 text-white overflow-hidden border-t border-white/10">
+      {/* Background Radiance with Framer Motion */}
+      <motion.div
+        animate={{
+          scale: [1, 1.15, 1],
+          opacity: [0.08, 0.16, 0.08],
+        }}
+        transition={{
+          duration: 10,
+          repeat: Infinity,
+          ease: "easeInOut",
+        }}
+        className="pointer-events-none absolute -top-32 right-1/4 h-[500px] w-[500px] rounded-full bg-orange-600/10 blur-[150px]"
+      />
+      <motion.div
+        animate={{
+          scale: [1, 1.2, 1],
+          opacity: [0.08, 0.15, 0.08],
+        }}
+        transition={{
+          duration: 12,
+          repeat: Infinity,
+          ease: "easeInOut",
+          delay: 2,
+        }}
+        className="pointer-events-none absolute bottom-0 left-1/4 h-[400px] w-[400px] rounded-full bg-amber-600/10 blur-[130px]"
+      />
 
-      <div className="section-shell relative z-10">
+      <div className="section-shell relative z-10 px-4 sm:px-6">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 rounded-full bg-orange-500/15 border border-orange-500/30 px-4 py-1 text-xs font-bold text-orange-300 mb-3 backdrop-blur-md">
+        <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
+          <motion.div
+            initial={{ opacity: 0, y: 12 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="inline-flex items-center gap-2 rounded-full bg-orange-500/15 border border-orange-500/30 px-4 py-1 text-xs font-bold text-orange-300 mb-3 backdrop-blur-md"
+          >
             <IconSparkles className="w-3.5 h-3.5 text-orange-400" />
             <span>The UNI Consultants Difference</span>
-          </div>
-          <h2 className="font-display text-3xl sm:text-5xl font-black text-white tracking-tight">
+          </motion.div>
+          <motion.h2
+            initial={{ opacity: 0, y: 14 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.1 }}
+            className="font-display text-2xl xs:text-3xl sm:text-5xl font-black text-white tracking-tight"
+          >
             &quot;HONESTY IS OUR COMMITMENT&quot;
-          </h2>
-          <p className="mt-2 font-serif italic text-lg sm:text-xl text-amber-300 font-medium">
+          </motion.h2>
+          <motion.p
+            initial={{ opacity: 0, y: 14 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.15 }}
+            className="mt-2 font-serif italic text-base sm:text-xl text-amber-300 font-medium"
+          >
             সততাই আমাদের একমাত্র অঙ্গীকার ও মূল দর্শন
-          </p>
-          <p className="mt-3 text-xs sm:text-sm text-slate-300 font-medium max-w-xl mx-auto leading-relaxed">
+          </motion.p>
+          <motion.p
+            initial={{ opacity: 0, y: 14 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2 }}
+            className="mt-3 text-xs sm:text-sm text-slate-300 font-medium max-w-xl mx-auto leading-relaxed"
+          >
             In an industry often clouded by exaggerated promises, {company.name} stands apart through uncompromising transparency, authentic university admissions, and genuine student care.
-          </p>
+          </motion.p>
         </div>
 
         {/* 6 Pillars Double-Bezel Grid */}
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-4 sm:gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
           {pillars.map((p, idx) => (
-            <div
+            <motion.div
               key={p.title}
-              className="group relative rounded-3xl bg-gradient-to-b from-white/[0.08] to-white/[0.02] p-1.5 border border-white/10 shadow-lg hover:border-orange-500/50 hover:-translate-y-1 hover:shadow-2xl transition-all duration-300"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: idx * 0.08, duration: 0.5 }}
+              whileHover={{ y: -4, transition: { duration: 0.2 } }}
+              className="group relative rounded-3xl bg-gradient-to-b from-white/[0.08] to-white/[0.02] p-1.5 border border-white/10 shadow-lg hover:border-orange-500/50 hover:shadow-2xl transition-colors"
             >
-              <div className="rounded-[1.35rem] bg-[#0A1020] p-6 sm:p-7 h-full flex flex-col justify-between space-y-4">
+              <div className="rounded-[1.35rem] bg-[#0A1020] p-5 sm:p-7 h-full flex flex-col justify-between space-y-4">
                 <div className="space-y-3">
                   <div className="flex items-center justify-between">
-                    <span className="text-3xl p-2 rounded-2xl bg-white/[0.05] border border-white/10">
+                    <span className="text-2xl sm:text-3xl p-2 rounded-2xl bg-white/[0.05] border border-white/10">
                       {p.icon}
                     </span>
                     <span className="font-display text-sm font-black text-orange-400/80">
@@ -94,7 +145,7 @@ export function HonestyManifesto() {
                   </div>
 
                   <div>
-                    <h3 className="font-display text-lg font-bold text-white group-hover:text-orange-400 transition-colors">
+                    <h3 className="font-display text-base sm:text-lg font-bold text-white group-hover:text-orange-400 transition-colors">
                       {p.title}
                     </h3>
                     <p className="text-xs font-semibold text-amber-300/90 font-bangla mt-0.5">
@@ -112,40 +163,49 @@ export function HonestyManifesto() {
                   <span>Verified Agency Standard</span>
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
 
         {/* Closing Action Strip */}
-        <div className="mt-14 rounded-3xl bg-gradient-to-r from-orange-500/20 via-amber-500/10 to-orange-500/20 border border-orange-500/30 p-8 sm:p-10 text-center max-w-4xl mx-auto space-y-4 shadow-2xl">
-          <h3 className="font-display text-2xl sm:text-3xl font-black text-white">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="mt-12 sm:mt-16 rounded-3xl bg-gradient-to-r from-orange-500/20 via-amber-500/10 to-orange-500/20 border border-orange-500/30 p-6 sm:p-10 text-center max-w-4xl mx-auto space-y-4 shadow-2xl"
+        >
+          <h3 className="font-display text-xl sm:text-3xl font-black text-white">
             Experience Honest Education Counseling Today
           </h3>
           <p className="text-xs sm:text-sm text-slate-300 max-w-xl mx-auto leading-relaxed">
             Visit our Dhaka Principal Office at 92 Ali Bhaban (7th Floor), Kazi Nazrul Islam Avenue, or message us on WhatsApp for a complete, cost-free profile assessment.
           </p>
-          <div className="pt-2 flex flex-wrap items-center justify-center gap-4">
-            <button
+          <div className="pt-2 flex flex-col xs:flex-row items-center justify-center gap-3 sm:gap-4">
+            <motion.button
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.97 }}
               type="button"
               onClick={open}
-              className="btn-primary text-xs py-3 px-7 font-bold rounded-xl shadow-lg cursor-pointer"
+              className="btn-primary w-full xs:w-auto text-xs py-3 px-6 font-bold rounded-xl flex items-center justify-center gap-2 shadow-lg cursor-pointer"
             >
-              <span>Book In-Person Session</span>
-              <span>→</span>
-            </button>
-            <a
+              <span>Book In-Person Counseling</span>
+              <IconArrowRight className="w-3.5 h-3.5" />
+            </motion.button>
+            <motion.a
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.97 }}
               href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(
-                `Hello ${company.name}! I want to book a free assessment based on your "Honesty is Our Commitment" standard.`,
+                "Hello UNI Consultants! I want to consult about admission options.",
               )}`}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-2 rounded-xl bg-white/10 border border-white/20 px-6 py-3 text-xs font-bold text-white hover:bg-white/20 transition-colors"
+              className="w-full xs:w-auto inline-flex items-center justify-center gap-2 rounded-xl bg-white/10 border border-white/20 px-6 py-3 text-xs font-bold text-white hover:bg-white/20 transition-colors"
             >
-              <IconWhatsApp className="w-4 h-4 text-emerald-400" />
-              <span>WhatsApp Hotline ({company.phones[0]})</span>
-            </a>
+              <IconWhatsApp className="w-3.5 h-3.5 text-emerald-400" />
+              <span>Direct WhatsApp Hotline</span>
+            </motion.a>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
